@@ -1,0 +1,115 @@
+
+stdio.h,2467
+#define	_STDIO_H	26,928
+#define	__need_size_t31,985
+#define	__need_NULL32,1007
+#define	__need___va_list35,1048
+#define	__gnuc_va_list	38,1116
+typedef struct __stdio_file FILE;49,1289
+#define	__FILE_defined	51,1324
+typedef __off_t fpos_t;58,1467
+} __io_mode;70,1964
+typedef __ssize_t __io_read 77,2143
+typedef __ssize_t __io_read __P 77,2143
+typedef __ssize_t __io_read __P ((__ptr_t 77,2143
+typedef __ssize_t __io_read __P ((__ptr_t __cookie,77,2143
+typedef __ssize_t __io_read __P ((__ptr_t __cookie, char *__buf,77,2143
+				  size_t 78,2208
+				  size_t __nbytes)78,2208
+typedef __ssize_t __io_write 86,2613
+typedef __ssize_t __io_write __P 86,2613
+typedef __ssize_t __io_write __P ((__ptr_t 86,2613
+typedef __ssize_t __io_write __P ((__ptr_t __cookie,86,2613
+typedef __ssize_t __io_write __P ((__ptr_t __cookie, __const 86,2613
+typedef __ssize_t __io_write __P ((__ptr_t __cookie, __const char *__buf,86,2613
+				   size_t 87,2687
+				   size_t __n)87,2687
+typedef int __io_seek 95,2987
+typedef int __io_seek __P 95,2987
+typedef int __io_seek __P ((__ptr_t 95,2987
+typedef int __io_seek __P ((__ptr_t __cookie,95,2987
+typedef int __io_seek __P ((__ptr_t __cookie, fpos_t 95,2987
+typedef int __io_seek __P ((__ptr_t __cookie, fpos_t * __pos,95,2987
+typedef int __io_seek __P ((__ptr_t __cookie, fpos_t * __pos, int __w)95,2987
+typedef int __io_close 98,3082
+typedef int __io_close __P 98,3082
+typedef int __io_close __P ((__ptr_t 98,3082
+typedef int __io_close __P ((__ptr_t __cookie)98,3082
+} __io_functions;107,3395
+} __room_functions;116,3672
+#define	__NORETURN	136,4369
+#define	__NORETURN138,4421
+#define	__validfp(187,6444
+#define	__clearerr(193,6714
+#define _IOFBF	205,7174
+#define _IOLBF	206,7217
+#define _IONBF	207,7260
+#define	BUFSIZ	211,7331
+#define	EOF	216,7444
+#define	SEEK_SET	221,7562
+#define	SEEK_CUR	222,7617
+#define	SEEK_END	223,7671
+#define	P_tmpdir	228,7795
+#define	vprintf(361,12956
+#define	vfscanf(410,14792
+#define	vscanf(411,14856
+#define	vsscanf(412,14918
+#define	__getc(431,15474
+   (int) ((unsigned char) *(stream)->__bufp++) : __fillbf(433,15568
+#define	getc(437,15735
+#define	getchar(440,15792
+#define	__putc(453,16152
+#define	putc(463,16663
+#define	putchar(466,16730
+#define	getdelim(505,18103
+#define	getline(506,18164
+#define	__getline(507,18215
+#define	puts(518,18535
+#define	feof(555,19827
+#define	ferror(556,19871
+#define	fileno(584,20628
+     defined(591,20808
+
+../hp300/stdio_lim.h,145
+#define L_tmpnam 1,0
+#define TMP_MAX 2,20
+#define L_ctermid 4,62
+#define L_cuserid 5,82
+#define FOPEN_MAX 7,109
+#define FILENAME_MAX 8,130
+
+../sysdeps/stub/stdio_lim.h,142
+#define	L_tmpnam	1,0
+#define	TMPMAX	2,19
+#define	L_ctermid	3,37
+#define	L_cuserid	4,57
+#define	FOPEN_MAX	5,77
+#define	FILENAME_MAX	6,98
+
+printf.h,1036
+#define	_PRINTF_H	21,856
+#define	__need_FILE26,914
+#define	__need_size_t28,953
+typedef int printf_function 57,1785
+typedef int printf_function __P 57,1785
+typedef int printf_function __P ((FILE 57,1785
+typedef int printf_function __P ((FILE * __stream,57,1785
+				  __const 58,1836
+				  __const struct printf_info 58,1836
+				  __const struct printf_info * __info,58,1836
+				  va_list 59,1879
+				  va_list * __args)59,1879
+typedef int printf_arginfo_function 60,1905
+typedef int printf_arginfo_function __P 60,1905
+typedef int printf_arginfo_function __P ((__const 60,1905
+typedef int printf_arginfo_function __P ((__const struct printf_info 60,1905
+typedef int printf_arginfo_function __P ((__const struct printf_info * __info,60,1905
+					  size_t 61,1984
+					  size_t __n,61,1984
+					  int *__argtypes)62,2003
+#define	PA_FLAG_MASK	103,3557
+#define	PA_FLAG_LONG_LONG	104,3586
+#define	PA_FLAG_LONG_DOUBLE	105,3621
+#define	PA_FLAG_LONG	106,3667
+#define	PA_FLAG_SHORT	107,3698
+#define	PA_FLAG_PTR	108,3731

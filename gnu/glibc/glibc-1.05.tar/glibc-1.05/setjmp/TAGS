@@ -1,0 +1,95 @@
+
+../sysdeps/m68k/setjmp.c,24
+DEFUN(__setjmp,30,1036
+
+../sysdeps/stub/setjmp.c,23
+DEFUN(__setjmp,26,954
+
+../sysdeps/i386/setjmp.c,79
+#define REGS 24,894
+  REG 27,935
+#define REG(29,947
+DEFUN(__setjmp,35,1078
+
+../sysdeps/sparc/setjmp.S,13
+FUNC 21,844
+
+../sysdeps/vax/setjmp.c,24
+DEFUN(__setjmp,30,1112
+
+../sysdeps/mips/setjmp.S,25
+ENTRY (__setjmp)24,1007
+
+sigjmp_save.c,28
+DEFUN(__sigjmp_save,25,913
+
+_setjmp.c,49
+#define	_BSD_SOURCE19,831
+DEFUN(_setjmp,28,938
+
+longjmp.c,28
+		    DEFUN(longjmp,26,965
+
+_longjmp.c,56
+#define	_BSD_SOURCE19,831
+		    DEFUN(_longjmp,28,989
+
+../sysdeps/m68k/__longjmp.c,25
+DEFUN(__longjmp,31,1116
+
+../sysdeps/stub/__longjmp.c,25
+DEFUN(__longjmp,28,1016
+
+../sysdeps/i386/__longjmp.c,83
+#define REGS 30,1009
+  REG 35,1076
+#define REG(37,1088
+DEFUN(__longjmp,45,1281
+
+../sysdeps/sparc/__longjmp.S,13
+FUNC 22,870
+
+../sysdeps/vax/__longjmp.c,46
+#define	REI	28,1046
+DEFUN(__longjmp,34,1215
+
+../sysdeps/mips/__longjmp.c,25
+DEFUN(__longjmp,31,1034
+
+siglongjmp.c,26
+DEFUN(siglongjmp,30,1096
+
+setjmp.h,413
+#define	_SETJMP_H	25,913
+#define	__NORETURN	33,1077
+#define	__NORETURN35,1129
+#define	__need_sigset_t45,1309
+} sigjmp_buf[54,1583
+#define	sigsetjmp(60,1796
+#define	sigsetjmp(66,2066
+typedef sigjmp_buf jmp_buf;83,2663
+typedef __jmp_buf jmp_buf;88,2774
+#define	longjmp(99,3107
+#define	setjmp(105,3336
+#define	setjmp(120,3665
+#define	longjmp(123,3728
+#define	_setjmp(126,3807
+#define	_setjmp(131,3926
+
+../sysdeps/m68k/jmp_buf.h,22
+  } __jmp_buf[19,510
+
+../sysdeps/stub/jmp_buf.h,28
+typedef int __jmp_buf[3,68
+
+../sysdeps/i386/jmp_buf.h,21
+  } __jmp_buf[9,177
+
+../sysdeps/sparc/jmp_buf.h,21
+  } __jmp_buf[9,181
+
+../sysdeps/vax/jmp_buf.h,21
+  } __jmp_buf[7,114
+
+../sysdeps/mips/jmp_buf.h,23
+  } __jmp_buf[43,1325

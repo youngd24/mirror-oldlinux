@@ -1,0 +1,180 @@
+
+offtime.c,86
+#define	SECS_PER_HOUR	32,1124
+#define	SECS_PER_DAY	33,1156
+DEFUN(__offtime,38,1301
+
+asctime.c,23
+DEFUN(asctime,29,1052
+
+../sysdeps/unix/bsd/clock.c,59
+DEFUN(timeval_to_clock_t,28,961
+DEFUN_VOID(clock)36,1193
+
+../sysdeps/posix/clock.c,25
+DEFUN_VOID(clock)25,980
+
+../sysdeps/stub/clock.c,25
+DEFUN_VOID(clock)26,993
+
+ctime.c,21
+DEFUN(ctime,29,1043
+
+difftime.c,23
+DEFUN(difftime,26,941
+
+gmtime.c,22
+DEFUN(gmtime,29,1031
+
+localtime.c,107
+#define	__tzname	30,1015
+#define	__daylight	31,1039
+#define	__timezone	32,1067
+DEFUN(localtime,37,1193
+
+mktime.c,46
+#define	invalid(29,991
+DEFUN(mktime,36,1267
+
+strftime.c,189
+#define	__tzname	36,1109
+#define	__daylight	37,1133
+#define	__timezone	38,1161
+#define	add(42,1198
+#define	cpy(55,1531
+#define	fmt(56,1591
+DEFUN(week,64,1799
+DEFUN(strftime,90,2801
+
+../sysdeps/unix/bsd/time.c,20
+DEFUN(time,27,1048
+
+../sysdeps/stub/time.c,19
+DEFUN(time,26,957
+
+../sysdeps/unix/sysv/i386/time.S,22
+SYSCALL (time,21,852
+
+__tzset.c,292
+#define	__tzname	29,1014
+#define	__daylight	30,1038
+#define	__timezone	31,1066
+#define	min(45,1456
+#define	max(46,1498
+#define	sign(47,1540
+  } tz_rule;67,2197
+DEFUN_VOID(__tzset)76,2366
+DEFUN(compute_change,344,8697
+DEFUN(__tz_compute,411,10296
+DEFUN_VOID (__tzname_max)434,10816
+
+tzfile.c,244
+#define	NOID26,951
+#define	__tzname	30,1005
+#define	__daylight	31,1029
+#define	__timezone	32,1057
+#define	uc2ul(60,1693
+#define	_uc2ul(61,1740
+DEFUN(__tzfile_read,66,1882
+DEFUN(__tzfile_default,198,5018
+DEFUN(__tzfile_compute,238,5792
+
+../sysdeps/unix/bsd/__gettod.S,32
+SYSCALL__ (gettimeofday,21,852
+
+../sysdeps/posix/__gettod.c,30
+DEFUN(__gettimeofday,28,1084
+
+../sysdeps/stub/__gettod.c,30
+DEFUN(__gettimeofday,27,1060
+
+../sysdeps/mach/__gettod.c,30
+DEFUN(__gettimeofday,28,1084
+
+settod.c,35
+	       DEFUN(settimeofday,28,993
+
+adjtime.c,30
+	       DEFUN(adjtime,28,993
+
+getitmr.c,32
+	       DEFUN(getitimer,28,996
+
+../sysdeps/unix/bsd/__getitmr.S,29
+SYSCALL__ (getitimer,21,852
+
+../sysdeps/stub/__getitmr.c,27
+DEFUN(__getitimer,27,1008
+
+../sysdeps/unix/bsd/__adjtime.S,27
+SYSCALL__ (adjtime,21,852
+
+../sysdeps/stub/__adjtime.c,25
+DEFUN(__adjtime,28,1136
+
+../sysdeps/mach/hurd/__adjtime.c,25
+DEFUN(__adjtime,29,1154
+
+../sysdeps/unix/bsd/__settod.S,32
+SYSCALL__ (settimeofday,21,852
+
+../sysdeps/stub/__settod.c,30
+DEFUN(__settimeofday,26,1000
+
+../sysdeps/unix/sysv/__settod.c,30
+DEFUN(__settimeofday,26,1000
+
+../sysdeps/mach/hurd/__settod.c,30
+DEFUN(__settimeofday,26,1006
+
+../sysdeps/unix/bsd/__setitmr.S,29
+SYSCALL__ (setitimer,21,852
+
+../sysdeps/stub/__setitmr.c,27
+DEFUN(__setitimer,28,1054
+
+tzset.c,66
+function_alias(tzset, __tzset, void, (), DEFUN_VOID(tzset)25,903
+
+gettod.c,35
+	       DEFUN(gettimeofday,28,993
+
+setitmr.c,32
+	       DEFUN(setitimer,28,999
+
+syms-time.c,0
+
+time.h,450
+#define	_TIME_H	26,964
+#define	__need_size_t35,1088
+#define	__need_NULL36,1110
+#define	CLOCKS_PER_SEC	44,1242
+#define	CLK_TCK	47,1297
+	(defined(54,1409
+#define	__clock_t_defined	55,1456
+typedef long int clock_t;58,1513
+	(defined(64,1665
+#define	__time_t_defined	65,1711
+typedef __time_t time_t;70,1790
+#define	__CONSTVALUE	108,2945
+#define	__CONSTVALUE110,2980
+#define	gmtime(141,4128
+#define	tzset(170,5017
+#define	__isleap(186,5388
+
+sys/time.h,324
+#define _SYS_TIME_H	22,887
+	 (defined(38,1063
+#define	__timeval_defined	39,1116
+#define	timeval	40,1144
+#define	timezone	47,1221
+#define	itimerval	48,1259
+#define	gettimeofday	70,2225
+#define	settimeofday	71,2261
+#define	adjtime	72,2297
+#define	getitimer	90,2967
+#define	setitimer	91,2997
+#define	utimes	92,3027
+
+gnu/time.h,28
+#define	_GNU_TIME_H	21,846

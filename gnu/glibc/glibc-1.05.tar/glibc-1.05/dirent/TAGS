@@ -1,0 +1,93 @@
+
+../sysdeps/unix/bsd/opendir.c,23
+DEFUN(opendir,33,1103
+
+../sysdeps/stub/opendir.c,22
+DEFUN(opendir,27,954
+
+../sysdeps/unix/sysv/sysv4/opendir.c,0
+
+../sysdeps/unix/bsd/closedir.c,24
+DEFUN(closedir,29,1029
+
+../sysdeps/stub/closedir.c,23
+DEFUN(closedir,28,990
+
+../sysdeps/unix/sysv/sysv4/closedir.c,0
+
+../sysdeps/unix/bsd/hp/m68k/readdir.c,0
+
+../sysdeps/unix/bsd/readdir.c,81
+#define	READ_DIRECTORY	30,1039
+#define	D_NAMLEN(40,1305
+DEFUN(readdir,45,1406
+
+../sysdeps/stub/readdir.c,22
+DEFUN(readdir,26,964
+
+../sysdeps/unix/bsd/sun/readdir.c,31
+#define	READ_DIRECTORY	23,952
+
+../sysdeps/unix/bsd/ultrix4/readdir.c,0
+
+../sysdeps/unix/bsd/bsd4.4/readdir.c,0
+
+../sysdeps/unix/sysv/sysv4/readdir.c,57
+#define D_NAMLEN(24,908
+#define	READ_DIRECTORY	32,1232
+
+../sysdeps/unix/bsd/rewinddir.c,24
+DEFUN(rewinddir,28,991
+
+../sysdeps/stub/rewinddir.c,24
+DEFUN(rewinddir,27,967
+
+../sysdeps/unix/sysv/sysv4/rewinddir.c,0
+
+../sysdeps/unix/bsd/seekdir.c,22
+DEFUN(seekdir,27,969
+
+../sysdeps/stub/seekdir.c,22
+DEFUN(seekdir,27,972
+
+../sysdeps/unix/sysv/sysv4/seekdir.c,0
+
+../sysdeps/unix/bsd/telldir.c,23
+DEFUN(telldir,28,1000
+
+../sysdeps/stub/telldir.c,22
+DEFUN(telldir,27,980
+
+../sysdeps/unix/sysv/sysv4/telldir.c,0
+
+scandir.c,22
+DEFUN(scandir,24,892
+
+alphasort.c,24
+DEFUN(alphasort,24,892
+
+getdents.c,37
+	       DEFUN(getdirentries,26,1019
+
+../sysdeps/unix/bsd/hp/m68k/__getdents.S,0
+
+../sysdeps/stub/__getdents.c,30
+DEFUN(__getdirentries,25,914
+
+../sysdeps/unix/bsd/sun/__getdents.S,33
+SYSCALL__ (getdirentries,21,852
+
+../sysdeps/unix/bsd/ultrix4/__getdents.S,0
+
+../sysdeps/unix/bsd/bsd4.4/__getdents.S,0
+
+../sysdeps/mach/hurd/__getdents.c,30
+DEFUN(__getdirentries,26,936
+
+dirent.h,150
+#define	_DIRENT_H	25,921
+#define	__need_size_t32,1003
+#define	d_ino	47,1367
+  } DIR;61,1802
+#define	MAXNAMLEN	89,2702
+#define	MAXNAMLEN	91,2735

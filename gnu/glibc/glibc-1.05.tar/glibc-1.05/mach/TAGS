@@ -1,0 +1,44 @@
+
+mach_init.c,20
+__mach_init 27,943
+
+vm_page_size.c,0
+
+mig_strncpy.c,20
+__mig_strncpy 7,91
+
+mig_support.c,79
+__mig_init 7,99
+__mig_get_reply_port 15,224
+__mig_dealloc_reply_port 25,417
+
+msg.c,73
+__mach_msg 30,1105
+__mach_msg_send	66,2161
+__mach_msg_receive 74,2355
+
+msg_destroy.c,0
+
+msg_server.c,0
+
+msg_server_t.c,0
+
+__msg_destroy.c,94
+__mach_msg_destroy(56,1607
+mach_msg_destroy_port(123,3381
+mach_msg_destroy_memory(141,3822
+
+__msg_server.c,63
+__mach_msg_server_timeout(54,1553
+__mach_msg_server 127,3486
+
+devstream.c,61
+input 29,1004
+output 68,1758
+mach_open_devstream 156,3366
+
+mach_init.h,112
+#define	_MACH_INIT_H	3,22
+#define mach_task_self(12,248
+#define round_page(18,402
+#define trunc_page(23,568

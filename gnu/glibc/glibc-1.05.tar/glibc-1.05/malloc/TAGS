@@ -1,0 +1,63 @@
+
+malloc.h,27
+#define _MALLOC_H	25,1009
+
+obstack.h,2060
+#define __OBSTACKS__107,4819
+#define __PTR_TO_INT(114,5047
+#define __INT_TO_PTR(118,5118
+#define __need_ptrdiff_t128,5518
+#define PTR_INT_TYPE 136,5621
+#define PTR_INT_TYPE 138,5658
+extern void _obstack_begin 172,7137
+extern void _obstack_begin_1 174,7228
+#define obstack_base(230,9215
+#define obstack_chunk_size(234,9304
+#define obstack_next_free(238,9418
+#define obstack_alignment_mask(242,9544
+#define obstack_init(244,9601
+#define obstack_begin(248,9733
+#define obstack_specify_allocation(252,9877
+#define obstack_specify_allocation_with_arg(256,10058
+#define obstack_1grow_fast(260,10262
+#define obstack_blank_fast(262,10329
+#define __extension__266,10449
+#define obstack_object_size(274,10681
+#define obstack_room(279,10850
+#define obstack_grow(289,11272
+#define obstack_grow0(299,11621
+#define obstack_1grow(310,12012
+#define obstack_ptr_grow(322,12450
+#define obstack_int_grow(330,12755
+#define obstack_ptr_grow_fast(338,13052
+#define obstack_int_grow_fast(339,13136
+#define obstack_blank(341,13216
+#define obstack_alloc(350,13515
+#define obstack_copy(356,13693
+#define obstack_copy0(362,13882
+#define obstack_finish(370,14171
+#define obstack_free(385,14765
+#define obstack_object_size(395,15114
+#define obstack_room(398,15196
+#define obstack_grow(401,15272
+  bcopy 405,15457
+#define obstack_grow0(408,15538
+  bcopy 412,15732
+#define obstack_1grow(416,15847
+#define obstack_ptr_grow(421,16015
+( (((h)->next_free + sizeof 422,16055
+   ? (_obstack_newchunk ((h), sizeof 423,16115
+  *((char **)(((h)->next_free+=sizeof(424,16175
+#define obstack_int_grow(426,16259
+( (((h)->next_free + sizeof 427,16299
+   ? (_obstack_newchunk ((h), sizeof 428,16357
+  *((int *)(((h)->next_free+=sizeof(429,16415
+#define obstack_ptr_grow_fast(431,16488
+#define obstack_int_grow_fast(432,16572
+#define obstack_blank(434,16652
+#define obstack_alloc(440,16865
+#define obstack_copy(443,16960
+#define obstack_copy0(446,17067
+#define obstack_finish(449,17176
+#define obstack_free(464,17745
+#define obstack_free(471,18082

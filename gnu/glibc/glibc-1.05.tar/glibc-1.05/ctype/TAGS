@@ -1,0 +1,25 @@
+
+ctype.h,588
+#define	_CTYPE_H	25,914
+#define	__isctype(59,2293
+#define	__isascii(61,2364
+#define	__toascii(62,2409
+#define	__tolower(64,2444
+#define	__toupper(65,2484
+#define	__exctype(68,2595
+#define	isalnum(118,3776
+#define	isalpha(119,3820
+#define	iscntrl(120,3864
+#define	isdigit(121,3908
+#define	islower(122,3952
+#define	isgraph(123,3996
+#define	isprint(124,4040
+#define	ispunct(125,4084
+#define	isspace(126,4128
+#define	isupper(127,4172
+#define	isxdigit(128,4216
+#define	isblank(131,4280
+tolower 136,4368
+toupper 145,4496
+#define	isascii(155,4670
+#define	toascii(156,4702

@@ -1,0 +1,396 @@
+
+
+
+XBOARD(1)                                               XBOARD(1)
+
+
+NNAAMMEE
+       xboard  -  Xt/Athena user interface for GNU Chess, version
+       1.2
+
+SSYYNNOOPPSSIISS
+       xxbbooaarrdd [ _-_w_p_c  _o_r  _-_w_h_i_t_e_P_i_e_c_e_C_o_l_o_r  _c_o_l_o_r  ]  [  _-_b_p_c  _o_r
+       _-_b_l_a_c_k_P_i_e_c_e_C_o_l_o_r _c_o_l_o_r ] [ _-_l_s_c _o_r _-_l_i_g_h_t_S_q_u_a_r_e_C_o_l_o_r _c_o_l_o_r
+       ] [ _-_d_s_c _o_r _-_d_a_r_k_S_q_u_a_r_e_C_o_l_o_r _c_o_l_o_r ] [ _-_m_p_s _o_r _-_m_o_v_e_s_P_e_r_S_-
+       _e_s_s_i_o_n _m_o_v_e_s ] [ _-_f_c_p _o_r _-_f_i_r_s_t_C_h_e_s_s_P_r_o_g_r_a_m _p_r_o_g_r_a_m___n_a_m_e ]
+       [ _-_s_c_p _o_r _-_s_e_c_o_n_d_C_h_e_s_s_P_r_o_g_r_a_m  _p_r_o_g_r_a_m___n_a_m_e  ]  [  _-_f_h  _o_r
+       _-_f_i_r_s_t_H_o_s_t  _h_o_s_t___n_a_m_e ] [ _-_s_h _o_r _-_s_e_c_o_n_d_H_o_s_t _h_o_s_t___n_a_m_e ] [
+       _-_s_p_b _o_r _-_s_o_l_i_d_P_a_w_n_B_i_t_m_a_p _f_i_l_e___n_a_m_e ] [ _-_s_r_b _o_r _-_s_o_l_i_d_R_o_o_k_-
+       _B_i_t_m_a_p  _f_i_l_e___n_a_m_e ] [ _-_s_b_b _o_r _-_s_o_l_i_d_B_i_s_h_o_p_B_i_t_m_a_p _f_i_l_e___n_a_m_e
+       ] [ _-_s_k_b _o_r  _-_s_o_l_i_d_K_n_i_g_h_t_B_i_t_m_a_p  _f_i_l_e___n_a_m_e  ]  [  _-_s_q_b  _o_r
+       _-_s_o_l_i_d_Q_u_e_e_n_B_i_t_m_a_p  _f_i_l_e___n_a_m_e  ] [ _-_s_k_b _o_r _-_s_o_l_i_d_K_i_n_g_B_i_t_m_a_p
+       _f_i_l_e___n_a_m_e ] [ _-_o_p_b _o_r  _-_o_u_t_l_i_n_e_P_a_w_n_B_i_t_m_a_p  _f_i_l_e___n_a_m_e  ]  [
+       _-_o_r_b  _o_r  _-_o_u_t_l_i_n_e_R_o_o_k_B_i_t_m_a_p  _f_i_l_e___n_a_m_e  ] [ _-_o_b_b _o_r _-_o_u_t_-
+       _l_i_n_e_B_i_s_h_o_p_B_i_t_m_a_p _f_i_l_e___n_a_m_e ]  [  _-_o_k_b  _o_r  _-_o_u_t_l_i_n_e_K_n_i_g_h_t_-
+       _B_i_t_m_a_p _f_i_l_e___n_a_m_e ] [ _-_o_q_b _o_r _-_o_u_t_l_i_n_e_Q_u_e_e_n_B_i_t_m_a_p _f_i_l_e___n_a_m_e
+       ] [ _-_o_k_b _o_r  _-_o_u_t_l_i_n_e_K_i_n_g_B_i_t_m_a_p  _f_i_l_e___n_a_m_e  ]  [  _-_r_s_h  _o_r
+       _-_r_e_m_o_t_e_S_h_e_l_l  _s_h_e_l_l___n_a_m_e ] [ _-_t_d _o_r _-_t_i_m_e_D_e_l_a_y _s_e_c_o_n_d_s ] [
+       _-_t_c _o_r _-_t_i_m_e_C_o_n_t_r_o_l _m_i_n_u_t_e_s  ]  [  _-_r_g_f  _o_r  _-_r_e_a_d_G_a_m_e_F_i_l_e
+       _f_i_l_e___n_a_m_e  ]  [ _-_r_p_f _o_r _-_r_e_a_d_P_o_s_i_t_i_o_n_F_i_l_e _f_i_l_e___n_a_m_e ] _-_s_g_f
+       _o_r _-_s_a_v_e_G_a_m_e_F_i_l_e _f_i_l_e___n_a_m_e ] [ _-_s_p_f  _o_r  _-_s_a_v_e_P_o_s_i_t_i_o_n_F_i_l_e
+       _f_i_l_e___n_a_m_e ] [ _-_m_m _o_r _-_m_a_t_c_h_M_o_d_e _(_F_a_l_s_e _| _I_n_i_t _| _P_o_s_i_t_i_o_n _|
+       _O_p_e_n_i_n_g_) ] [ _-_m_o_n_o _o_r _-_m_o_n_o_M_o_d_e _(_T_r_u_e _| _F_a_l_s_e_) ] [  _-_d_e_b_u_g
+       _o_r  _-_d_e_b_u_g_M_o_d_e  _(_T_r_u_e  _|  _F_a_l_s_e_)  ] [ _-_c_l_o_c_k _o_r _-_c_l_o_c_k_M_o_d_e
+       _(_T_r_u_e _| _F_a_l_s_e_) ] [ _-_b_i_g _o_r _-_b_i_g_S_i_z_e_M_o_d_e _(_T_r_u_e _| _F_a_l_s_e_) ] [
+       _-_s_t _o_r _-_s_e_a_r_c_h_T_i_m_e _s_e_c_o_n_d_s ]
+
+DDEESSCCRRIIPPTTIIOONN
+       _x_b_o_a_r_d  provides  an  X11/Xt/Athena Widgets user interface
+       for GNU Chess.  With _x_b_o_a_r_d you can play GNU Chess,  setup
+       arbitrary positions, force variations or watch _x_b_o_a_r_d man-
+       age a game between two chess programs.
+
+       _x_b_o_a_r_d can also be used as a chessboard to play out games.
+       It will read through a game file or allow a player to play
+       (force mode) through a variation  manually.   All  of  the
+       keystroke  commands (Backward, Forward, Reset, etc.) work.
+       A chess program doesn't even need to  be  present  in  the
+       program  search  path  in  this  case.  This is useful for
+       keeping track of email postal games or browsing games  off
+       the net.
+
+       After  starting  _x_b_o_a_r_d  you  can make moves by pressing a
+       mouse button while the cursor is over a square  with  your
+       piece  on it and dragging the mouse to another square.  If
+       the move is illegal, _g_n_u_c_h_e_s_s will not allow  it.   _x_b_o_a_r_d
+       will then retract the move.
+
+       Alternate  bitmaps for piece icons can be specified either
+       by choosing one of two built-in sets or with the file name
+       resources  described  below.   There are two sets of piece
+
+
+
+X Version 11              June 11, 1991                         1
+
+
+
+
+
+XBOARD(1)                                               XBOARD(1)
+
+
+       bitmaps available: a large set (the default) and  a  small
+       set.   It  is easiest to select the small set in the .Xde-
+       faults file:
+
+       XBoard*bigSizeMode: false
+
+       The font used  for  button  labels  and  comments  can  be
+       changed in the
+
+       XBoard*font:   helvetica_oblique14
+
+       If you are using a grayscale monitor, try setting the col-
+       ors to:
+
+       XBoard*whitePieceColor:     gray100
+       XBoard*blackPieceColor:     gray0
+       XBoard*lightSquareColor:    gray60
+       XBoard*darkSquareColor:     gray40
+
+OOPPTTIIOONNSS
+       The following command line options also  correspond  to  X
+       resources that you can set in your _._X_d_e_f_a_u_l_t_s file.
+
+       ssttaannddaarrdd XXtt ooppttiioonnss
+               _x_b_o_a_r_d  accepts  standard Xt options like _-_d_i_s_p_l_a_y
+               and _-_g_e_o_m_e_t_r_y.
+
+       --wwppcc oorr --wwhhiitteePPiieecceeCCoolloorr ccoolloorr
+               Color specification for white pieces suitable  for
+               _X_P_a_r_s_e_C_o_l_o_r(3X11).   Default: #FFFFCC.  These col-
+               ors look good on a DEC workstation.  If  you  need
+               different  colors,  try using the _x_c_o_l_o_r_s applica-
+               tion.  Source for _x_c_o_l_o_r_s  can  be  found  in  the
+               X11/R4 contrib directory.
+
+       --bbppcc oorr --bbllaacckkPPiieecceeCCoolloorr ccoolloorr
+               Same for black pieces.  Default: #202020.
+
+       --llsscc oorr --lliigghhttSSqquuaarreeCCoolloorr ccoolloorr
+               Same for light squares.  Default: #C8C365.
+
+       --ddsscc oorr --ddaarrkkSSqquuaarreeCCoolloorr ccoolloorr
+               Same for dark squares.  Default: #77A26D.
+
+       --ttdd oorr --ttiimmeeDDeellaayy sseeccoonnddss
+               Time  delay between moves during "Play From File".
+               This doesn't have to be round  numbers.   Try  -td
+               0.4.  Default: 1 second.
+
+       --cclloocckk oorr --cclloocckkMMooddee ((TTrruuee || FFaallssee))
+               Determines  whether or not to use the clock.  Some
+               people aren't interested in having the chess clock
+               be updated.  This allows it to be turned off.  The
+               side that is on move is still highlighted.
+
+
+
+X Version 11              June 11, 1991                         2
+
+
+
+
+
+XBOARD(1)                                               XBOARD(1)
+
+
+       --bbiigg oorr --bbiiggSSiizzeeMMooddee ((TTrruuee || FFaallssee))
+               Determines which set of bitmaps to use, a built-in
+               80x80 pixel set or a built-in 64-64 set.
+
+       --sstt oorr --sseeaarrcchhTTiimmee sseeccoonnddss
+               Call GNU Chess with only one argument.  Determines
+               the program search time in seconds.
+
+       --ttcc oorr --ttiimmeeCCoonnttrrooll mmiinnuutteess
+               Amount of time for a set of  moves  determined  by
+               _m_o_v_e_s_P_e_r_S_e_s_s_i_o_n.   If  this  number  of  moves  is
+               played within  the  time  control  period,  _x_b_o_a_r_d
+               resets the time clocks.  Default: 5 minutes.
+
+       --mmppss oorr --mmoovveessPPeerrSSeessssiioonn mmoovveess
+               Number of moves in a playing session.  Default: 40
+               moves.
+
+       --rrggff oorr --rreeaaddGGaammeeFFiillee ffiillee
+               Name of file to read a game record from.   If  the
+               first  line  does not appear to start with a move,
+               that is if the first character of the file is  not
+               `1',  then the first line is assumed to be a title
+               and is displayed.  Comments either  start  with  [
+               and  end  with a matching ] or they start with a !
+               and end with the next  newline.   Game  files  are
+               found in the directory named by the CHESSDIR envi-
+               ronment  variable.   If  this  variable   is   not
+               declared then the current directory is used unless
+               the file name starts with a /.
+
+       --rrppff oorr --rreeaaddPPoossiittiioonnFFiillee ffiillee
+               Name of file to read a game position from.   Posi-
+               tion files are found in the directory named by the
+               CHESSDIR environment variable.  If  this  variable
+               is not declared then the current directory is used
+               unless the file name starts with a /.
+
+       --ssggff oorr --ssaavveeGGaammeeFFiillee ffiillee
+               Name of  file  to  save  a  game  record  to.   No
+               default.
+
+       --ssppff oorr --ssaavveePPoossiittiioonnFFiillee ffiillee
+               Name  of  file  to  save  a  game position to.  No
+               default.
+
+       --rrsshh oorr --rreemmootteeSShheellll sshheellll__nnaammee
+               Some systems do not use rsh as the  remote  shell.
+               This option allows a user to name the remote shell
+               command.  This should  be  done  in  the  resource
+               file.
+
+       --ffccpp oorr --ffiirrssttCChheessssPPrrooggrraamm pprrooggrraamm
+               Name  of  first  chess  program  that, by default,
+
+
+
+X Version 11              June 11, 1991                         3
+
+
+
+
+
+XBOARD(1)                                               XBOARD(1)
+
+
+               plays black.  Default: "gnuchessr".
+
+       --ssccpp oorr --sseeccoonnddCChheessssPPrrooggrraamm pprrooggrraamm
+               Name of second chess  program  that,  by  default,
+               plays white.  Default: "gnuchessr".
+
+       --ffhh oorr --ffiirrssttHHoosstt hhoosstt
+               Name  of  host  the  white chess program plays on.
+               Default: "localhost".
+
+       --sshh oorr --sseeccoonnddHHoosstt hhoosstt
+               Name of host the black  chess  program  plays  on.
+               Default: "localhost".
+
+       --ss**bb oorr --ssoolliidd**BBiittmmaapp ffiillee
+               Names  of  the  bitmap  files for the bitmap piece
+               icons.         Default:         solid_pawn.bitmap,
+               solid_rook.bitmap ...
+
+       --oo**bb oorr --oouuttlliinnee**BBiittmmaapp ffiillee
+               Names  of  the  bitmap files for the outline piece
+               icons.    Default:    outline_pawn.bitmap,    out-
+               line_rook.bitmap ...
+
+       --mmmm oorr --mmaattcchhMMooddee ((FFaallssee || IInniitt || PPoossiittiioonn || OOppeenniinngg))
+               Automatically run a game between _f_i_r_s_t_C_h_e_s_s_P_r_o_g_r_a_m
+               and _s_e_c_o_n_d_C_h_e_s_s_P_r_o_g_r_a_m.  If _m_a_t_c_h_M_o_d_e  is  set  to
+               _I_n_i_t,  _x_b_o_a_r_d will start the game with the initial
+               chess position.  If _m_a_t_c_h_M_o_d_e is set to  _P_o_s_i_t_i_o_n,
+               _x_b_o_a_r_d will start the game with the position spec-
+               ified by the _r_e_a_d_P_o_s_i_t_i_o_n_F_i_l_e resource.  If _m_a_t_c_h_-
+               _M_o_d_e  is  set to _O_p_e_n_i_n_g, _x_b_o_a_r_d will play out the
+               opening  moves  specified  by  the   _-_r_e_a_d_G_a_m_e_F_i_l_e
+               resource.  Default: "False".
+
+       --mmoonnoo oorr --mmoonnooMMooddee ((FFaallssee || TTrruuee))
+               Determines  whether _x_b_o_a_r_d displays its pieces and
+               squares with two colors or  four.   You  shouldn't
+               have to specify monochrome.  _x_b_o_a_r_d will determine
+               if this is necessary.
+
+RREESSOOUURRCCEESS
+       iinniittSSttrriinngg
+               The actual string that is sent to  initialize  the
+               chess  program  can  be  set  from .Xdefaults.  It
+               can't be set from the command line because of syn-
+               tax problems.
+
+       wwhhiitteeSSttrriinngg aanndd bbllaacckkSSttrriinngg
+               These  resources  control  what  is  sent when the
+               Machine  White  and  Machine  Black  buttons   are
+               selected.   This  is mostly for compatibility with
+               previous versions of gnuchess.
+
+
+
+
+X Version 11              June 11, 1991                         4
+
+
+
+
+
+XBOARD(1)                                               XBOARD(1)
+
+
+       XXBBooaarrdd**ffoonntt
+               This is the font that is used by _x_b_o_a_r_d.
+
+CCOOMMMMAANNDD BBUUTTTTOONNSS AANNDD KKEEYYSS
+       QQuuiitt    Quits _x_b_o_a_r_d.  Q or q is a keyboard equivalent.
+
+       RReesseett   Resets _x_b_o_a_r_d to the beginning of  a  chess  game.
+               It also deselects any game or position files.
+
+       FFlliipp VViieeww
+               inverts the view of the chess board.
+
+       HHiinntt    displays a move hint from GNU Chess.
+
+       PPllaayy FFrroomm FFiillee
+               plays  a  game  from a record file.  If no file is
+               specified a popup  dialog  asks  for  a  filename.
+               Game files are found in the directory named by the
+               CHESSDIR environment variable.  If  this  variable
+               is not declared then the current directory is used
+               unless the file name starts with a /.  G or g is a
+               keyboard equivalent.
+
+       SSeettuupp FFrroomm FFiillee
+               sets  up  a  position from a position file.  If no
+               file is specified a popup dialog asks for a  file-
+               name.   Position  files are found in the directory
+               named by the CHESSDIR  environment  variable.   If
+               this  variable  is  not  declared then the current
+               directory is used unless the file name starts with
+               a /.
+
+       SSaavvee GGaammee
+               saves  a  game  to  a  record file.  If no file is
+               specified a popup dialog asks for a filename.
+
+       SSaavvee PPoossiittiioonn
+               saves a position to a position file.  If  no  file
+               is specified a popup dialog asks for a filename.
+
+       MMaacchhiinnee BBllaacckk
+               forces GNU Chess to play black.
+
+       MMaacchhiinnee WWhhiittee
+               forces GNU Chess to play white.
+
+       SSwwiittcchh SSiiddeess
+               forces GNU Chess to switch sides.
+
+       TTwwoo MMaacchhiinneess
+               plays a game between two computer programs.
+
+       FFoorrwwaarrdd moves  forward  through  a  series  of  remembered
+               moves.  F or f is a keyboard equivalent.
+
+
+
+X Version 11              June 11, 1991                         5
+
+
+
+
+
+XBOARD(1)                                               XBOARD(1)
+
+
+       BBaacckkwwaarrdd
+               moves backward  through  a  series  of  remembered
+               moves.  B or b is a keyboard equivalent.
+
+       FFoorrccee MMoovveess
+               forces a series of moves.
+
+       PPaauussee   pauses  the game clocks or game replay.  P or p is
+               a keyboard equivalent.
+
+       IIccoonniiffyy I, i, C or c iconifies _x_b_o_a_r_d.
+
+SSEEEE AALLSSOO
+       _x_c_h_e_s_s(1), _g_n_u_c_h_e_s_s(1)
+
+LLIIMMIITTAATTIIOONNSS
+       Doesn't handle black to play positions.
+
+       White must be on move for two program mode to work.
+
+       Only recognizes algebraic notation.
+
+       If you press the Pause  button  during  GNU  Chess's  turn
+       _x_b_o_a_r_d.   will  stop  the clocks, but GNU Chess will still
+       make a move.
+
+       If you play out an opening set of  moves  with  _P_l_a_y  _F_r_o_m
+       _F_i_l_e,  you must make a move and then select _M_a_c_h_i_n_e _B_l_a_c_k.
+
+       -iconic doesn't work properly.
+
+CCOOPPYYRRIIGGHHTT
+       Copyright 1991 by Digital Equipment Corporation,  Maynard,
+       Massachusetts.
+
+       All Rights Reserved
+
+       Permission to use, copy, modify, and distribute this soft-
+       ware and its documentation for any purpose and without fee
+       is  hereby  granted,  provided  that  the  above copyright
+       notice appear in all copies and that both  that  copyright
+       notice  and  this  permission  notice appear in supporting
+       documentation, and that the name of Digital not be used in
+       advertising or publicity pertaining to distribution of the
+       software without specific, written prior permission.
+
+       DIGITAL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFT-
+       WARE,  INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+       AND FITNESS, IN NO EVENT SHALL DIGITAL BE LIABLE  FOR  ANY
+       SPECIAL,  INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+       WHATSOEVER RESULTING FROM LOSS OF USE,  DATA  OR  PROFITS,
+       WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TOR-
+       TIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
+       OR PERFORMANCE OF THIS SOFTWARE.
+
+
+
+X Version 11              June 11, 1991                         6
+
+

@@ -1,0 +1,88 @@
+
+../sysdeps/unix/bsd/getrlimit.S,27
+SYSCALL (getrlimit,21,852
+
+../sysdeps/stub/getrlimit.c,25
+DEFUN(getrlimit,26,1015
+
+../sysdeps/mach/hurd/getrlimit.c,25
+DEFUN(getrlimit,27,1033
+
+../sysdeps/unix/bsd/setrlimit.S,27
+SYSCALL (setrlimit,21,852
+
+../sysdeps/stub/setrlimit.c,25
+DEFUN(setrlimit,27,1063
+
+../sysdeps/unix/sysv/setrlimit.c,25
+DEFUN(setrlimit,32,1230
+
+../sysdeps/mach/hurd/setrlimit.c,25
+DEFUN(setrlimit,27,1069
+
+getrusage.c,32
+	       DEFUN(getrusage,25,978
+
+../sysdeps/unix/bsd/ulimit.c,48
+#define	 _etext	26,960
+DEFUN(__ulimit,40,1403
+
+../sysdeps/stub/ulimit.c,24
+DEFUN(__ulimit,32,1285
+
+../sysdeps/unix/sysv/ulimit.S,24
+SYSCALL (ulimit,21,852
+
+../sysdeps/generic/vlimit.c,22
+DEFUN(vlimit,31,1211
+
+../sysdeps/generic/vtimes.c,83
+#define TIMEVAL_TO_VTIMES(26,1016
+DEFUN(vtimes_one,33,1260
+DEFUN(vtimes,59,2051
+
+../sysdeps/unix/bsd/getprio.S,29
+SYSCALL (getpriority,21,852
+
+../sysdeps/stub/getprio.c,27
+DEFUN(getpriority,28,1191
+
+../sysdeps/mach/hurd/getprio.c,27
+DEFUN(getpriority,29,1215
+
+../sysdeps/unix/bsd/setprio.S,29
+SYSCALL (setpriority,21,852
+
+../sysdeps/stub/setprio.c,27
+DEFUN(setpriority,26,1014
+
+../sysdeps/unix/bsd/__getrusag.S,29
+SYSCALL__ (getrusage,21,852
+
+../sysdeps/stub/__getrusag.c,27
+DEFUN(__getrusage,26,1031
+
+../sysdeps/unix/bsd/nice.c,20
+DEFUN(nice,27,1058
+
+../sysdeps/stub/nice.c,20
+DEFUN(nice,26,1032
+
+../sysdeps/unix/sysv/nice.S,22
+SYSCALL (nice,21,846
+
+sys/resource.h,170
+#define	_SYS_RESOURCE_H	21,856
+#define RLIM_INFINITY 66,1881
+#define	getrusage(138,4504
+#define	ulimit(152,5100
+#define	PRIO_MIN	157,5210
+#define	PRIO_MAX	158,5275
+
+sys/vlimit.h,56
+#define _SYS_VLIMIT_H	21,860
+#define INFINITY 58,1685
+
+sys/vtimes.h,71
+#define _SYS_VTIMES_H	21,860
+#define	VTIMES_UNITS_PER_SECOND	30,1129

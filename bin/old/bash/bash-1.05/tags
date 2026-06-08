@@ -1,0 +1,634 @@
+alias_list_grow_amount	alias.c	27
+find_alias	alias.c	/^find_alias (name)$/
+get_alias_value	alias.c	/^get_alias_value (name)$/
+add_alias	alias.c	/^add_alias (name, value)$/
+remove_alias	alias.c	/^remove_alias (name)$/
+delete_all_aliases	alias.c	/^delete_all_aliases ()$/
+self_delimiting	alias.c	/^self_delimiting (character)$/
+alias_expand	alias.c	/^alias_expand (string)$/
+initialize_readline	bashline.c	/^initialize_readline ()$/
+bash_push_line	bashline.c	/^bash_push_line ()$/
+bash_re_edit	bashline.c	/^bash_re_edit (line)$/
+ETCHOSTS	bashline.c	95
+initialize_hostname_list	bashline.c	/^initialize_hostname_list ()$/
+add_host_name	bashline.c	/^add_host_name (name)$/
+sort_hostname_list	bashline.c	/^sort_hostname_list ()$/
+cr_whitespace	bashline.c	156
+snarf_hosts_from_file	bashline.c	/^snarf_hosts_from_file (filename)$/
+hostnames_matching	bashline.c	/^hostnames_matching (text)$/
+insert_last_arg	bashline.c	/^insert_last_arg(count, c)$/
+attempt_shell_completion	bashline.c	/^attempt_shell_completion (text, start, end)$/
+command_word_completion_function	bashline.c	/^command_word_completion_function (hint_text, state)$/
+variable_completion_function	bashline.c	/^variable_completion_function (text, state)$/
+hostname_completion_function	bashline.c	/^hostname_completion_function (text, state)$/
+shell_expand_line	bashline.c	/^shell_expand_line (ignore)$/
+bash_tilde_expand	bashline.c	/^bash_tilde_expand (text)$/
+bash_symbolic_link_hook	bashline.c	/^bash_symbolic_link_hook (dirname)$/
+brace_whitespace	braces.c	31
+NULL	braces.c	33
+brace_expand	braces.c	/^brace_expand (text)$/
+expand_amble	braces.c	/^expand_amble (text)$/
+brace_gobbler	braces.c	/^brace_gobbler (text, index, satisfy)$/
+array_concat	braces.c	/^array_concat (arr1, arr2)$/
+copy_array	braces.c	/^copy_array (array)$/
+fatal_error	braces.c	/^fatal_error (format, arg1, arg2)$/
+report_error	braces.c	/^report_error (format, arg1, arg2)$/
+Mbraces	braces.c	/^main ()$/
+main	braces.c	/^main ()$/
+sigmask	builtins.c	47
+MAXPATHLEN	builtins.c	61
+enable_shell_command	builtins.c	/^enable_shell_command (name, disable_p)$/
+enable_builtin	builtins.c	/^enable_builtin (list)$/
+help_builtin	builtins.c	/^help_builtin (list)$/
+colon_builtin	builtins.c	/^colon_builtin ()$/
+period_builtin	builtins.c	/^period_builtin (list)$/
+parse_and_execute	builtins.c	/^parse_and_execute (string, from_file)$/
+check_loop_level	builtins.c	/^check_loop_level ()$/
+break_builtin	builtins.c	/^break_builtin (list)$/
+continue_builtin	builtins.c	/^continue_builtin (list)$/
+get_numeric_arg	builtins.c	/^get_numeric_arg (list)$/
+cd_builtin	builtins.c	/^cd_builtin (list)$/
+change_to_directory	builtins.c	/^change_to_directory (newdir)$/
+get_working_directory	builtins.c	/^get_working_directory (for_whom)$/
+echo_builtin	builtins.c	/^echo_builtin (list)$/
+eval_builtin	builtins.c	/^eval_builtin (list)$/
+exec_builtin	builtins.c	/^exec_builtin (list)$/
+exit_builtin	builtins.c	/^exit_builtin (list)$/
+logout_builtin	builtins.c	/^logout_builtin (list)$/
+exit_or_logout	builtins.c	/^exit_or_logout (list)$/
+export_builtin	builtins.c	/^export_builtin (list)$/
+set_or_show_attributes	builtins.c	/^set_or_show_attributes (list, attribute)$/
+FILENAME_HASH_BUCKETS	builtins.c	1474
+pathdata	builtins.c	1486
+initialize_filename_hashing	builtins.c	/^initialize_filename_hashing ()$/
+remember_filename	builtins.c	/^remember_filename (filename, full_pathname, check_dot)$/
+find_hashed_filename	builtins.c	/^find_hashed_filename (filename)$/
+hash_builtin	builtins.c	/^hash_builtin (list)$/
+history_builtin	builtins.c	/^history_builtin (list)$/
+pwd_builtin	builtins.c	/^pwd_builtin (list)$/
+read_builtin	builtins.c	/^read_builtin (list)$/
+stream_close	builtins.c	/^stream_close (file)$/
+readonly_builtin	builtins.c	/^readonly_builtin (list)$/
+return_builtin	builtins.c	/^return_builtin (list)$/
+set_builtin	builtins.c	/^set_builtin (list)$/
+push_context	builtins.c	/^push_context ()$/
+pop_context	builtins.c	/^pop_context ()$/
+push_dollar_vars	builtins.c	/^push_dollar_vars ()$/
+pop_dollar_vars	builtins.c	/^pop_dollar_vars ()$/
+remember_args	builtins.c	/^remember_args (list, destructive)$/
+no_args	builtins.c	/^no_args (list)$/
+shift_builtin	builtins.c	/^shift_builtin (list)$/
+test_builtin	builtins.c	/^test_builtin (list)$/
+scale60	builtins.c	/^scale60 (tvalp)$/
+times_builtin	builtins.c	/^times_builtin (list)$/
+SET	builtins.c	2269
+REVERT	builtins.c	2270
+IGNORE	builtins.c	2271
+trap_builtin	builtins.c	/^trap_builtin (list)$/
+type_builtin	builtins.c	/^type_builtin (list)$/
+declare_builtin	builtins.c	/^declare_builtin (list)$/
+local_builtin	builtins.c	/^local_builtin (list)$/
+declare_internal	builtins.c	/^declare_internal (list, no_modifiers)$/
+umask_builtin	builtins.c	/^umask_builtin (list)$/
+read_octal	builtins.c	/^read_octal (string)$/
+unset_builtin	builtins.c	/^unset_builtin (list)$/
+builtin_builtin	builtins.c	/^builtin_builtin (list)$/
+decrement_variable	builtins.c	/^decrement_variable (var)$/
+command_builtin	builtins.c	/^command_builtin (list)$/
+polite_directory_format	builtins.c	/^polite_directory_format (name)$/
+pushd_builtin	builtins.c	/^pushd_builtin (list)$/
+dirs_builtin	builtins.c	/^dirs_builtin (list)$/
+cd_to_string	builtins.c	/^cd_to_string (name)$/
+popd_builtin	builtins.c	/^popd_builtin (list)$/
+alias_builtin	builtins.c	/^alias_builtin (list)$/
+unalias_builtin	builtins.c	/^unalias_builtin (list)$/
+print_alias	builtins.c	/^print_alias (alias)$/
+wait_builtin	builtins.c	/^wait_builtin (list)$/
+builtin_error	builtins.c	/^builtin_error (va_alist)$/
+builtin_error	builtins.c	/^builtin_error (format, arg1, arg2)$/
+jobs_builtin	builtins.c	/^jobs_builtin (list)$/
+suspend_continue	builtins.c	/^suspend_continue ()$/
+suspend_builtin	builtins.c	/^suspend_builtin (list)$/
+fg_builtin	builtins.c	/^fg_builtin (list)$/
+bg_builtin	builtins.c	/^bg_builtin (list)$/
+fg_bg	builtins.c	/^fg_bg (list, foreground)$/
+get_job_spec	builtins.c	/^get_job_spec (list)$/
+CONTINUE_OR_FAIL	builtins.c	3570
+CONTINUE_OR_FAIL	builtins.c	3572
+kill_builtin	builtins.c	/^kill_builtin (list)$/
+DETACH	builtins.c	3682
+detach_builtin	builtins.c	/^detach_builtin (list)$/
+copy_word	copy_cmd.c	/^copy_word (word)$/
+copy_word_list	copy_cmd.c	/^copy_word_list (list)$/
+copy_case_clause	copy_cmd.c	/^copy_case_clause (clause)$/
+copy_case_clauses	copy_cmd.c	/^copy_case_clauses (clauses)$/
+copy_redirect	copy_cmd.c	/^copy_redirect (redirect)$/
+copy_redirects	copy_cmd.c	/^copy_redirects (list)$/
+copy_for_command	copy_cmd.c	/^copy_for_command (com)$/
+copy_group_command	copy_cmd.c	/^copy_group_command (com)$/
+copy_case_command	copy_cmd.c	/^copy_case_command (com)$/
+copy_while_command	copy_cmd.c	/^copy_while_command (com)$/
+copy_if_command	copy_cmd.c	/^copy_if_command (com)$/
+copy_simple_command	copy_cmd.c	/^copy_simple_command (com)$/
+copy_function_def	copy_cmd.c	/^copy_function_def (com)$/
+copy_command	copy_cmd.c	/^copy_command (command)$/
+dispose_command	dispose_cmd.c	/^dispose_command (command)$/
+dispose_word	dispose_cmd.c	/^dispose_word (word)$/
+dispose_words	dispose_cmd.c	/^dispose_words (list)$/
+dispose_word_array	dispose_cmd.c	/^dispose_word_array (array)$/
+dispose_redirects	dispose_cmd.c	/^dispose_redirects (list)$/
+SIGABRT	execute_cmd.c	31
+execute_command	execute_cmd.c	/^execute_command (command)$/
+shell_control_structure	execute_cmd.c	/^shell_control_structure (type)$/
+execute_command_internal	execute_cmd.c	/^execute_command_internal (command, asynchronous, pipe_in, pipe_out)$/
+execute_for_command	execute_cmd.c	/^execute_for_command (for_command)$/
+execute_case_command	execute_cmd.c	/^execute_case_command (case_command)$/
+execute_while_command	execute_cmd.c	/^execute_while_command (while_command)$/
+execute_until_command	execute_cmd.c	/^execute_until_command (while_command)$/
+execute_if_command	execute_cmd.c	/^execute_if_command (if_command)$/
+find_shell_builtin	execute_cmd.c	/^find_shell_builtin (string)$/
+execute_simple_command	execute_cmd.c	/^execute_simple_command (simple_command, pipe_in, pipe_out, async)$/
+close_pipes	execute_cmd.c	/^close_pipes (in, out)$/
+do_piping	execute_cmd.c	/^do_piping (pipe_in, pipe_out)$/
+AMBIGUOUS_REDIRECT	execute_cmd.c	1055
+NOCLOBBER_REDIRECT	execute_cmd.c	1056
+do_redirections	execute_cmd.c	/^do_redirections (list, for_real, internal)$/
+redirection_expand	execute_cmd.c	/^redirection_expand (word)$/
+do_redirection	execute_cmd.c	/^do_redirection (redirect, for_real, remembering)$/
+add_undo_redirect	execute_cmd.c	/^add_undo_redirect (fd)$/
+intern_function	execute_cmd.c	/^intern_function (name, function)$/
+check_identifier	execute_cmd.c	/^check_identifier (word)$/
+all_digits	execute_cmd.c	/^all_digits (string)$/
+u_mode_bits	execute_cmd.c	1341
+g_mode_bits	execute_cmd.c	1342
+o_mode_bits	execute_cmd.c	1343
+X_BIT	execute_cmd.c	1344
+executable_file	execute_cmd.c	/^executable_file (file)$/
+group_member	execute_cmd.c	/^group_member (gid)$/
+find_user_command	execute_cmd.c	/^find_user_command (name)$/
+find_path_file	execute_cmd.c	/^find_path_file (name)$/
+find_user_command_internal	execute_cmd.c	/^find_user_command_internal (name, must_be_executable)$/
+user_command_matches	execute_cmd.c	/^user_command_matches (name, must_be_executable, state)$/
+find_user_command_in_path	execute_cmd.c	/^find_user_command_in_path (name, path_list, must_be_executable)$/
+extract_colon_unit	execute_cmd.c	/^extract_colon_unit (string, index)$/
+gethostname	fakeshit.c	/^char *gethostname(char *hostname, int len)$/
+ulimit	fakeshit.c	/^long ulimit(int cmd, long newlimit)$/
+crappy_read	fakeshit.c	/^int crappy_read(int fd, char *ch)$/
+NULL	flags.c	24
+find_flag	flags.c	/^find_flag (name)$/
+change_flag_char	flags.c	/^change_flag_char (flag, on_or_off)$/
+change_flag	flags.c	/^change_flag (flag, on_or_off)$/
+which_set_flags	flags.c	/^which_set_flags ()$/
+NULL	general.c	33
+xmalloc	general.c	/^xmalloc (size)$/
+xrealloc	general.c	/^xrealloc (pointer, size)$/
+map_over_list	general.c	/^map_over_list (list, function)$/
+map_over_words	general.c	/^map_over_words (words, function)$/
+reverse_list	general.c	/^reverse_list (list)$/
+list_length	general.c	/^list_length (list)$/
+delete_element	general.c	/^delete_element (list, comparer, arg)$/
+find_name_in_list	general.c	/^find_name_in_list (name, array)$/
+array_len	general.c	/^array_len (array)$/
+free_array	general.c	/^free_array (array)$/
+list_append	general.c	/^list_append (head, tail)$/
+strip_leading	general.c	/^strip_leading (string)$/
+strip_trailing	general.c	/^strip_trailing (string)$/
+MAXPATHLEN	general.c	242
+make_absolute	general.c	/^make_absolute (string, dot_path)$/
+pathname_backup	general.c	/^pathname_backup (path, n)$/
+absolute_pathname	general.c	/^absolute_pathname (string)$/
+base_pathname	general.c	/^base_pathname (string)$/
+strindex	general.c	/^strindex (s1, s2)$/
+lowercase_p	general.c	384
+uppercase_p	general.c	385
+pure_alphabetic	general.c	386
+to_upper	general.c	387
+to_lower	general.c	388
+strnicmp	general.c	/^strnicmp (string1, string2, count)$/
+stricmp	general.c	/^stricmp (string1, string2)$/
+strchr	general.c	/^strchr (s, c)$/
+dup2	general.c	/^dup2 (fd1, fd2)$/
+bcopy	general.c	/^bcopy(s,d,n) char *d,*s; { while(n--) *d++ = *s++; }$/
+sysv_getc	general.c	/^sysv_getc (stream)$/
+SYSVr3	glob.c	25
+DIRENT	glob.c	29
+direct	glob.c	36
+D_NAMLEN	glob.c	37
+D_NAMLEN	glob.c	39
+bcopy	glob.c	57
+rindex	glob.c	58
+NULL	glob.c	71
+glob_pattern_p	glob.c	/^glob_pattern_p (pattern)$/
+glob_match	glob.c	/^glob_match (pattern, text, dot_special)$/
+glob_match_after_star	glob.c	/^glob_match_after_star (pattern, text)$/
+glob_vector	glob.c	/^glob_vector (pat, dir)$/
+glob_dir_to_array	glob.c	/^glob_dir_to_array (dir, array)$/
+glob_filename	glob.c	/^glob_filename (pathname)$/
+Mglob	glob.c	/^main (argc, argv)$/
+main	glob.c	/^main (argc, argv)$/
+FILENAME_HASH_BUCKETS	hash.c	29
+initialize_hashed_filenames	hash.c	/^initialize_hashed_filenames ()$/
+make_hash_table	hash.c	/^make_hash_table (buckets)$/
+initialize_hash_table	hash.c	/^initialize_hash_table (table)$/
+hash_string	hash.c	/^hash_string (string, table)$/
+find_hash_item	hash.c	/^find_hash_item (string, table)$/
+remove_hash_item	hash.c	/^remove_hash_item (string, table)$/
+add_hash_item	hash.c	/^add_hash_item (string, table)$/
+get_hash_bucket	hash.c	/^get_hash_bucket (bucket, table)$/
+NBUCKETS	hash.c	166
+xmalloc	hash.c	/^xmalloc (bytes)$/
+Mhash	hash.c	/^main ()$/
+main	hash.c	/^main ()$/
+IGNORE_ARG	jobs.c	22
+NEW_TTY_DRIVER	jobs.c	44
+sigmask	jobs.c	69
+SIGABRT	jobs.c	73
+SIGCHLD	jobs.c	77
+JOB_SLOTS	jobs.c	87
+setpgid	jobs.c	145
+tcsetpgrp	jobs.c	146
+tcgetpgrp	jobs.c	/^tcgetpgrp (fd)$/
+making_children	jobs.c	/^making_children ()$/
+stop_making_children	jobs.c	/^stop_making_children ()$/
+start_pipeline	jobs.c	/^start_pipeline ()$/
+stop_pipeline	jobs.c	/^stop_pipeline (async, deferred)$/
+cleanup_dead_jobs	jobs.c	/^cleanup_dead_jobs ()$/
+delete_job	jobs.c	/^delete_job (index)$/
+discard_pipeline	jobs.c	/^discard_pipeline (chain)$/
+add_process	jobs.c	/^add_process (name, pid)$/
+map_over_jobs	jobs.c	/^map_over_jobs (func, arg1, arg2)$/
+find_pipeline	jobs.c	/^find_pipeline (pid)$/
+find_job	jobs.c	/^find_job (pid)$/
+describe_pid	jobs.c	/^describe_pid (pid)$/
+pretty_print_job	jobs.c	/^pretty_print_job (index, format, stream)$/
+list_one_job	jobs.c	/^list_one_job (job, format, ignore, index)$/
+list_jobs	jobs.c	/^list_jobs (format)$/
+make_child	jobs.c	/^make_child (command, async_p)$/
+get_tty_state	jobs.c	/^get_tty_state ()$/
+set_tty_state	jobs.c	/^set_tty_state ()$/
+lastproc	jobs.c	/^lastproc (job)$/
+wait_for_single_pid	jobs.c	/^wait_for_single_pid (pid)$/
+wait_for_background_pids	jobs.c	/^wait_for_background_pids ()$/
+wait_for	jobs.c	/^wait_for (pid)$/
+wait_for_job	jobs.c	/^wait_for_job (job)$/
+notify_and_cleanup	jobs.c	/^notify_and_cleanup ()$/
+most_recent_job_in_state	jobs.c	/^most_recent_job_in_state (job, state)$/
+last_stopped_job	jobs.c	/^last_stopped_job (job)$/
+last_running_job	jobs.c	/^last_running_job (job)$/
+set_current_job	jobs.c	/^set_current_job (job)$/
+reset_current	jobs.c	/^reset_current ()$/
+start_job	jobs.c	/^start_job (job, foreground)$/
+kill_pid	jobs.c	/^kill_pid (pid, signal, group)$/
+flush_child	jobs.c	/^flush_child (sig, code)$/
+notify_of_job_status	jobs.c	/^notify_of_job_status ()$/
+add_times	jobs.c	/^add_times (rused)$/
+getdtablesize	jobs.c	/^getdtablesize ()$/
+initialize_jobs	jobs.c	/^initialize_jobs ()$/
+set_job_control	jobs.c	/^set_job_control (arg)$/
+initialize_job_signals	jobs.c	/^initialize_job_signals ()$/
+cont_signal_handler	jobs.c	/^cont_signal_handler (sig, code)$/
+stop_signal_handler	jobs.c	/^stop_signal_handler (sig, code)$/
+give_terminal_to	jobs.c	/^give_terminal_to (pgrp)$/
+delete_all_jobs	jobs.c	/^delete_all_jobs ()$/
+without_job_control	jobs.c	/^without_job_control ()$/
+MAXPATHLEN	mailcheck.c	28
+NOW	mailcheck.c	31
+time_to_check_mail	mailcheck.c	/^time_to_check_mail ()$/
+reset_mail_timer	mailcheck.c	/^reset_mail_timer ()$/
+find_mail_file	mailcheck.c	/^find_mail_file (file)$/
+add_mail_file	mailcheck.c	/^add_mail_file (file)$/
+reset_mail_files	mailcheck.c	/^reset_mail_files ()$/
+free_mail_files	mailcheck.c	/^free_mail_files ()$/
+full_pathname	mailcheck.c	/^full_pathname (file)$/
+file_mod_date_changed	mailcheck.c	/^file_mod_date_changed (file)$/
+file_access_date_changed	mailcheck.c	/^file_access_date_changed (file)$/
+DEFAULT_MAIL_PATH	mailcheck.c	227
+DEFAULT_MAIL_PATH	mailcheck.c	229
+get_mailpaths	mailcheck.c	/^get_mailpaths ()$/
+remember_mail_dates	mailcheck.c	/^remember_mail_dates ()$/
+check_mail	mailcheck.c	/^check_mail ()$/
+make_word	make_cmd.c	/^make_word (string)$/
+make_word_from_token	make_cmd.c	/^make_word_from_token (token)$/
+make_word_list	make_cmd.c	/^make_word_list (word, link)$/
+add_string_to_list	make_cmd.c	/^add_string_to_list (string, list)$/
+coerce_to_word	make_cmd.c	/^coerce_to_word (number)$/
+make_command	make_cmd.c	/^make_command (type, pointer)$/
+command_connect	make_cmd.c	/^command_connect (com1, com2, connector)$/
+make_for_command	make_cmd.c	/^make_for_command (name, map_list, action)$/
+make_group_command	make_cmd.c	/^make_group_command (command)$/
+make_case_command	make_cmd.c	/^make_case_command (word, clauses)$/
+make_pattern_list	make_cmd.c	/^make_pattern_list (patterns, action)$/
+make_if_command	make_cmd.c	/^make_if_command (test, true_case, false_case)$/
+make_until_or_while	make_cmd.c	/^make_until_or_while (test, action, which)$/
+make_while_command	make_cmd.c	/^make_while_command (test, action)$/
+make_until_command	make_cmd.c	/^make_until_command (test, action)$/
+make_simple_command	make_cmd.c	/^make_simple_command (element, command)$/
+make_redirection	make_cmd.c	/^make_redirection (source, instruction, dest)$/
+make_function_def	make_cmd.c	/^make_function_def (name, command)$/
+file_error	make_cmd.c	/^file_error (filename)$/
+programming_error	make_cmd.c	/^programming_error (reason, arg1, arg2)$/
+report_error	make_cmd.c	/^report_error (format, arg1, arg2, arg3, arg4, arg5)$/
+fatal_error	make_cmd.c	/^fatal_error (format, arg1, arg2, arg3, arg4, arg5)$/
+programming_error	make_cmd.c	/^programming_error (va_alist)$/
+report_error	make_cmd.c	/^report_error (va_alist)$/
+fatal_error	make_cmd.c	/^fatal_error (va_alist)$/
+clean_simple_command	make_cmd.c	/^clean_simple_command (command)$/
+make_word_array	make_cmd.c	/^make_word_array (list)$/
+Mnewversion	newversion.c	/^main (argc, argv)$/
+main	newversion.c	/^main (argc, argv)$/
+get_float_from_file	newversion.c	/^get_float_from_file (filename, var)$/
+get_int_from_file	newversion.c	/^get_int_from_file (filename, var)$/
+must_open	newversion.c	/^must_open (name, mode)$/
+SIGABRT	nojobs.c	36
+TCGETA	nojobs.c	40
+TCSETAW	nojobs.c	41
+killpg	nojobs.c	45
+siginterrupt	nojobs.c	/^int siginterrupt (sig, flag) int sig, flag; { return 0; }$/
+initialize_job_signals	nojobs.c	/^initialize_job_signals ()$/
+make_child	nojobs.c	/^make_child (command, async_p)$/
+wait_for_single_pid	nojobs.c	/^wait_for_single_pid (pid)$/
+wait_for_background_pids	nojobs.c	/^wait_for_background_pids ()$/
+wait_for	nojobs.c	/^wait_for (pid)$/
+kill_pid	nojobs.c	/^kill_pid (pid, signal, group)$/
+get_tty_state	nojobs.c	/^get_tty_state ()$/
+set_tty_state	nojobs.c	/^set_tty_state ()$/
+give_terminal_to	nojobs.c	/^give_terminal_to (pgrp)$/
+stop_pipeline	nojobs.c	/^stop_pipeline (async, ignore)$/
+describe_pid	nojobs.c	/^describe_pid (pid)$/
+IF	parse.c	4
+THEN	parse.c	5
+ELSE	parse.c	6
+ELIF	parse.c	7
+FI	parse.c	8
+CASE	parse.c	9
+ESAC	parse.c	10
+FOR	parse.c	11
+WHILE	parse.c	12
+UNTIL	parse.c	13
+DO	parse.c	14
+DONE	parse.c	15
+FUNCTION	parse.c	16
+IN	parse.c	17
+WORD	parse.c	18
+NUMBER	parse.c	19
+AND_AND	parse.c	20
+OR_OR	parse.c	21
+GREATER_GREATER	parse.c	22
+LESS_LESS	parse.c	23
+LESS_AND	parse.c	24
+GREATER_AND	parse.c	25
+SEMI_SEMI	parse.c	26
+LESS_LESS_MINUS	parse.c	27
+AND_GREATER	parse.c	28
+DOUBLE_OPEN	parse.c	29
+DOUBLE_CLOSE	parse.c	30
+yacc_EOF	parse.c	31
+YYERRCODE	parse.c	32
+YYDEBUG	parse.c	44
+YYTABLESIZE	parse.c	159
+YYFINAL	parse.c	330
+YYDEBUG	parse.c	332
+YYMAXTOKEN	parse.c	334
+yyclearin	parse.c	447
+yyerrok	parse.c	448
+YYSTACKSIZE	parse.c	451
+YYSTACKSIZE	parse.c	453
+yystacksize	parse.c	464
+TOKEN_DEFAULT_GROW_SIZE	parse.c	471
+return_EOF	parse.c	/^return_EOF ()			/* does nothing good. */$/
+st_stream	parse.c	499
+st_string	parse.c	500
+init_yy_io	parse.c	/^init_yy_io (get_function, unget_function, type, location)$/
+yy_getc	parse.c	/^yy_getc ()$/
+yy_ungetc	parse.c	/^yy_ungetc (c)$/
+yy_readline_get	parse.c	/^yy_readline_get ()$/
+yy_readline_unget	parse.c	/^yy_readline_unget (c)$/
+with_input_from_stdin	parse.c	/^with_input_from_stdin ()$/
+with_input_from_stdin	parse.c	/^with_input_from_stdin ()$/
+yy_string_get	parse.c	/^yy_string_get ()$/
+yy_string_unget	parse.c	/^yy_string_unget (c)$/
+with_input_from_string	parse.c	/^with_input_from_string (string, name)$/
+yy_stream_get	parse.c	/^yy_stream_get ()$/
+yy_stream_unget	parse.c	/^yy_stream_unget (c)$/
+with_input_from_stream	parse.c	/^with_input_from_stream (stream, name)$/
+push_stream	parse.c	/^push_stream ()$/
+pop_stream	parse.c	/^pop_stream ()$/
+read_a_line	parse.c	/^read_a_line ()$/
+read_secondary_line	parse.c	/^read_secondary_line ()$/
+shell_getc	parse.c	/^shell_getc (remove_quoted_newline)$/
+shell_ungetc	parse.c	/^shell_ungetc (c)$/
+discard_until	parse.c	/^discard_until (character)$/
+re_edit	parse.c	/^re_edit (text)$/
+pre_process_line	parse.c	/^pre_process_line (line, print_changes, addit)$/
+READ	parse.c	1125
+RESET	parse.c	1126
+yylex	parse.c	/^yylex ()$/
+reset_parser	parse.c	/^reset_parser ()$/
+read_token	parse.c	/^read_token (command)$/
+reserved_word_acceptable	parse.c	/^reserved_word_acceptable (token)$/
+prompt_again	parse.c	/^prompt_again ()$/
+MAXPATHLEN	parse.c	1665
+PROMPT_GROWTH	parse.c	1689
+decode_prompt_string	parse.c	/^decode_prompt_string (string)$/
+yyerror	parse.c	/^yyerror ()$/
+report_syntax_error	parse.c	/^report_syntax_error (message)$/
+discard_parser_constructs	parse.c	/^discard_parser_constructs (error_p)$/
+handle_eof_input_unit	parse.c	/^handle_eof_input_unit ()$/
+YYABORT	parse.c	2030
+YYACCEPT	parse.c	2031
+YYERROR	parse.c	2032
+yyparse	parse.c	/^yyparse()$/
+PRINTED_COMMAND_GROW_SIZE	print_cmd.c	33
+print_command	print_cmd.c	/^print_command (command)$/
+make_command_string	print_cmd.c	/^make_command_string (command)$/
+make_command_string_internal	print_cmd.c	/^make_command_string_internal (command)$/
+print_word_list	print_cmd.c	/^print_word_list (list, separator)$/
+command_print_word_list	print_cmd.c	/^command_print_word_list (list, separator)$/
+print_for_command	print_cmd.c	/^print_for_command (for_command)$/
+print_group_command	print_cmd.c	/^print_group_command (group_command)$/
+print_case_command	print_cmd.c	/^print_case_command (case_command)$/
+print_case_clauses	print_cmd.c	/^print_case_clauses (clauses)$/
+print_while_command	print_cmd.c	/^print_while_command (while_command)$/
+print_until_command	print_cmd.c	/^print_until_command (while_command)$/
+print_until_or_while	print_cmd.c	/^print_until_or_while (while_command, which)$/
+print_if_command	print_cmd.c	/^print_if_command (if_command)$/
+print_simple_command	print_cmd.c	/^print_simple_command (simple_command)$/
+print_redirection_list	print_cmd.c	/^print_redirection_list (redirects)$/
+print_redirection	print_cmd.c	/^print_redirection (redirect)$/
+reset_locals	print_cmd.c	/^reset_locals ()$/
+print_function_def	print_cmd.c	/^print_function_def (func)$/
+named_function_string	print_cmd.c	/^named_function_string (name, command, multi_line)$/
+newline	print_cmd.c	/^newline (string)$/
+indent	print_cmd.c	/^indent (amount)$/
+cprintf	print_cmd.c	/^cprintf (control, arg1, arg2, arg3, arg4, arg5)$/
+cprintf	print_cmd.c	/^cprintf (va_alist)$/
+MAINTAINER	shell.c	71
+PPROMPT	shell.c	76
+SPROMPT	shell.c	81
+Int	shell.c	159
+Charp	shell.c	160
+Mshell	shell.c	/^main (argc, argv, env)$/
+main	shell.c	/^main (argc, argv, env)$/
+maybe_execute_file	shell.c	/^maybe_execute_file (fname)$/
+reader_loop	shell.c	/^reader_loop ()$/
+indirection_level_string	shell.c	/^indirection_level_string ()$/
+read_command	shell.c	/^read_command ()$/
+shell_initialize	shell.c	/^shell_initialize ()$/
+shell_reinitialize	shell.c	/^shell_reinitialize ()$/
+initialize_signals	shell.c	/^initialize_signals ()$/
+TERMSIGS_LENGTH	shell.c	827
+termination_unwind_protect	shell.c	/^termination_unwind_protect (sig)$/
+initialize_terminating_signals	shell.c	/^initialize_terminating_signals ()$/
+throw_to_top_level	shell.c	/^throw_to_top_level ()$/
+sigint_sighandler	shell.c	/^sigint_sighandler ()$/
+save_history	shell.c	/^save_history ()$/
+LAST_INTERESTING_HISTORY_COUNT	shell.c	924
+make_bug_report	shell.c	/^make_bug_report (va_alist)$/
+show_shell_version	shell.c	/^show_shell_version ()$/
+NSIG	siglist.c	24
+initialize_siglist	siglist.c	/^initialize_siglist ()$/
+DEFAULT_ARRAY_SIZE	subst.c	32
+substring	subst.c	/^substring (string, start, end)$/
+string_extract_verbatim	subst.c	/^string_extract_verbatim (string, sindex, charlist)$/
+string_extract	subst.c	/^string_extract (string, sindex, charlist)$/
+de_backslash	subst.c	/^de_backslash (string)$/
+unquote_bang	subst.c	/^unquote_bang (string)$/
+extract_command_subst	subst.c	/^extract_command_subst (string, sindex)$/
+string_extract_double_quoted	subst.c	/^string_extract_double_quoted (string, sindex)$/
+assignment_name	subst.c	/^assignment_name (string)$/
+string_list	subst.c	/^string_list (list)$/
+list_string	subst.c	/^list_string (string, separators, quoted)$/
+do_assignment	subst.c	/^do_assignment (string)$/
+sub_append_string	subst.c	/^sub_append_string (source, target, index, size)$/
+sub_append_number	subst.c	/^sub_append_number (number, target, index, size)$/
+list_rest_of_args	subst.c	/^list_rest_of_args ()$/
+string_rest_of_args	subst.c	/^string_rest_of_args ()$/
+expand_string	subst.c	/^expand_string (string, quoted)$/
+dequote	subst.c	/^dequote (list)$/
+QUOTE_CHAR	subst.c	496
+DEQUOTE_CHAR	subst.c	497
+quote_string	subst.c	/^quote_string (s)$/
+quote_list	subst.c	/^quote_list (list)$/
+RP_LONG_LEFT	subst.c	530
+RP_SHORT_LEFT	subst.c	531
+RP_LONG_RIGHT	subst.c	532
+RP_SHORT_RIGHT	subst.c	533
+remove_pattern	subst.c	/^remove_pattern (param, pattern, op)$/
+expand_word	subst.c	/^expand_word (word, quoted)$/
+expand_word_internal	subst.c	/^expand_word_internal (word, quoted)$/
+get_rid_of_variable_assignments	subst.c	/^get_rid_of_variable_assignments (list)$/
+get_rid_of_environment_assignments	subst.c	/^get_rid_of_environment_assignments (list)$/
+expand_words	subst.c	/^expand_words (list)$/
+expand_words_no_vars	subst.c	/^expand_words_no_vars (list)$/
+expand_words_1	subst.c	/^expand_words_1 (list, do_vars)$/
+shell_glob_filename	subst.c	/^shell_glob_filename (pathname)$/
+sv_path	subst.c	/^int sv_path (), sv_mail (), sv_terminal (), sv_histsize (), sv_uids (),$/
+sv_noclobber	subst.c	/^sv_noclobber (name)$/
+sv_path	subst.c	/^sv_path ()$/
+sv_mail	subst.c	/^sv_mail (name)$/
+sv_terminal	subst.c	/^sv_terminal (name)$/
+sv_histsize	subst.c	/^sv_histsize (name)$/
+sv_history_control	subst.c	/^sv_history_control (name)$/
+sv_ignoreeof	subst.c	/^sv_ignoreeof (name)$/
+sv_glob_dot_filenames	subst.c	/^sv_glob_dot_filenames (name)$/
+sv_histchars	subst.c	/^sv_histchars (name)$/
+sv_notify	subst.c	/^sv_notify (name)$/
+sv_nolinks	subst.c	/^sv_nolinks (name)$/
+sv_uids	subst.c	/^sv_uids ()$/
+sv_hostname_completion_file	subst.c	/^sv_hostname_completion_file ()$/
+sv_allow_null_glob_expansion	subst.c	/^sv_allow_null_glob_expansion (name)$/
+R_OK	test.c	44
+W_OK	test.c	45
+X_OK	test.c	46
+F_OK	test.c	47
+TRUE	test.c	61
+FALSE	test.c	62
+SHELL_BOOLEAN	test.c	63
+TRUTH_OR	test.c	64
+TRUTH_AND	test.c	65
+test_exit	test.c	73
+test_exit	test.c	78
+test_syntax_error	test.c	/^test_syntax_error (format, arg)$/
+test_io_error	test.c	/^test_io_error (name)$/
+advance	test.c	117
+advance	test.c	/^advance (f)$/
+unary_advance	test.c	132
+beyond	test.c	/^beyond ()$/
+int_expt_err	test.c	/^int_expt_err (pch)$/
+isint	test.c	/^isint (m, pl)$/
+age_of	test.c	/^age_of (posit, age)$/
+term	test.c	/^term ()$/
+and	test.c	/^and ()$/
+or	test.c	/^or ()$/
+expr	test.c	/^expr ()$/
+Mtest	test.c	/^main (margc, margv)$/
+main	test.c	/^main (margc, margv)$/
+initialize_traps	trap.c	/^initialize_traps ()$/
+signal_name	trap.c	/^signal_name (signal)$/
+decode_signal	trap.c	/^decode_signal (string)$/
+trap_handler	trap.c	/^trap_handler (sig)$/
+set_signal	trap.c	/^set_signal (sig, string)$/
+change_signal	trap.c	/^change_signal (sig, value)$/
+restore_default_signal	trap.c	/^restore_default_signal (sig)$/
+ignore_signal	trap.c	/^ignore_signal (sig)$/
+run_exit_trap	trap.c	/^run_exit_trap ()$/
+ULIMIT_BLOCK_SIZE	ulimit.c	42
+u_FILE_SIZE	ulimit.c	44
+u_MAX_BREAK_VAL	ulimit.c	45
+u_PIPE_SIZE	ulimit.c	46
+u_CORE_FILE_SIZE	ulimit.c	47
+u_DATA_SEG_SIZE	ulimit.c	48
+u_PHYS_MEM_SIZE	ulimit.c	49
+u_CPU_TIME_LIMIT	ulimit.c	50
+u_STACK_SIZE	ulimit.c	51
+RLIM_INFINITY	ulimit.c	54
+set_process_resource_limits	ulimit.c	/^set_process_resource_limits ()$/
+ulimit_builtin	ulimit.c	/^ulimit_builtin (list)$/
+shell_ulimit	ulimit.c	/^shell_ulimit (which, newlim, setting)$/
+RLIM_NLIMITS	ulimit.c	358
+print_all_limits	ulimit.c	/^print_all_limits ()$/
+without_interrupts	unwind_prot.c	/^without_interrupts (function, arg1, arg2)$/
+begin_unwind_frame	unwind_prot.c	/^begin_unwind_frame (tag)$/
+discard_unwind_frame	unwind_prot.c	/^discard_unwind_frame (tag)$/
+run_unwind_frame	unwind_prot.c	/^run_unwind_frame (tag)$/
+add_unwind_protect	unwind_prot.c	/^add_unwind_protect (cleanup, arg)$/
+remove_unwind_protect	unwind_prot.c	/^remove_unwind_protect ()$/
+run_unwind_protects	unwind_prot.c	/^run_unwind_protects ()$/
+add_unwind_protect_internal	unwind_prot.c	/^add_unwind_protect_internal (cleanup, arg)$/
+remove_unwind_protect_internal	unwind_prot.c	/^remove_unwind_protect_internal ()$/
+run_unwind_protects_internal	unwind_prot.c	/^run_unwind_protects_internal ()$/
+unwind_frame_discard_internal	unwind_prot.c	/^unwind_frame_discard_internal (tag)$/
+unwind_frame_run_internal	unwind_prot.c	/^unwind_frame_run_internal (tag)$/
+DEFAULT_MAIL_PATH	variables.c	66
+DEFAULT_MAIL_PATH	variables.c	68
+initialize_shell_variables	variables.c	/^initialize_shell_variables (env)$/
+non_unsettable	variables.c	/^non_unsettable (name)$/
+set_if_not	variables.c	/^set_if_not (name, value)$/
+print_var_list	variables.c	/^print_var_list (list)$/
+print_assignment	variables.c	/^print_assignment (var)$/
+print_var_value	variables.c	/^print_var_value (var)$/
+print_var_function	variables.c	/^print_var_function (var)$/
+find_variable	variables.c	/^find_variable (string)$/
+get_string_value	variables.c	/^get_string_value (var_name)$/
+make_local_variable	variables.c	/^make_local_variable (name)$/
+bind_variable	variables.c	/^bind_variable (name, value)$/
+dispose_variable	variables.c	/^dispose_variable (var)$/
+var_has_name	variables.c	/^var_has_name (var, name)$/
+unbind_function	variables.c	/^unbind_function (name)$/
+unbind_variable	variables.c	/^unbind_variable (name)$/
+makunbound	variables.c	/^makunbound (name)$/
+kill_local_variable	variables.c	/^kill_local_variable (name)$/
+kill_all_local_variables	variables.c	/^kill_all_local_variables ()$/
+bind_function	variables.c	/^bind_function (name, value)$/
+copy_variable	variables.c	/^copy_variable (var)$/
+set_var_read_only	variables.c	/^set_var_read_only (name)$/
+set_var_auto_export	variables.c	/^set_var_auto_export (name)$/
+assignment	variables.c	/^assignment (string)$/
+make_var_array	variables.c	/^make_var_array (list)$/
+assign_in_env	variables.c	/^assign_in_env (string)$/
+find_tempenv_variable	variables.c	/^find_tempenv_variable (name)$/
+dispose_used_env_vars	variables.c	/^dispose_used_env_vars ()$/
+qsort_string_compare	variables.c	/^qsort_string_compare (s1, s2)$/
+add_or_supercede	variables.c	/^add_or_supercede (assign, array)$/
+maybe_make_export_env	variables.c	/^maybe_make_export_env ()$/
+getenv	variables.c	/^getenv (name)$/

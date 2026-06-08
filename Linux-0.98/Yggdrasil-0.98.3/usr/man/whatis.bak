@@ -1,0 +1,127 @@
+*gindxbib (1)        - make inverted index for bibliographic databases
+*glkbib (1)          - search bibliographic databases
+*glookbib (1)        - search bibliographic databases
+*grefer (1)          - preprocess bibliographic references for groff
+Mtools (5)           - a collection of tools for manipulating MSDOS files
+addftinfo (1)        - add information to troff font files for use with groff
+apropos (1)          - search the whatis database for strings
+basename (1)         - strip directory and suffix from filenames
+bison (1)            - GNU Project parser generator (yacc replacement)
+cat (1)              - concatenate files and print on the standard output
+chgrp (1)            - change the group ownership of files
+chmod (1)            - change the access permissions of files
+chown (1)            - change the user and group ownership of files
+cmp (1)              - compare two files
+comm (1)             - compare two sorted files line by line
+compress, uncompress, zcat (1) - compress and uncompress files
+cp (1)               - copy files
+csplit (1)           - split a file into sections determined by context lines
+ctags (1)            - Generates "tags" and (optionally) "refs" files
+cut (1)              - remove sections from each line of files
+date (1)             - print or set the system date and time
+dd (1)               - convert a file while copying it
+df (1)               - summarize free disk space
+dirname (1)          - strip filename suffix from pathname
+du (1)               - summarize disk usage
+elvis, ex, vi, view, input (1) - The editor
+elvprsv (1)          - Preserve the the modified version of a file after a crash.
+elvrec (1)           - Recover the modified version of a file after a crash
+env (1)              - run a program in a modified environment
+expand (1)           - convert tabs to spaces
+expr (1)             - evaluate expressions
+file (1) - determine file type
+find (1)             - search for files in a directory hierarchy
+fmt (1)              - adjust line-length for paragraphs of text
+fold (1)             - wrap each input line to fit in specified width
+geqn (1)             - groff equation formatter
+getty - alternative System V/SunOS 4 getty 
+gpic (1)             - compile pictures for troff or TeX
+grep, egrep (1)      - print lines matching a regular expression
+grodvi (1)           - convert groff output to TeX dvi format
+groff (1)            - front end for the groff document formatting system
+groff_font (5)       - format of groff device and font description files
+groff_me (7)         - groff macros for formatting papers
+groff_mm (7)         - groff mm macros
+groff_ms (7)         - groff ms macros
+groff_out (5)        - format of groff output
+grog (1)             - guess options for groff command
+grops (1)            - PostScript driver for groff
+grotty (1)           - groff driver for typewriter-like devices
+groups (1)           - print the groups a user is in
+gsoelim (1)          - interpret .so requests in groff input
+gtbl (1)             - table formatter for groff
+gtroff (1)           - format documents
+head (1)             - output the first part of files
+id (1)               - print real and effective UIDs and GIDs
+install (1)          - copy files and set their attributes
+join (1)             - join lines of two files on a common field
+kermit (1)           - file transfer, management, and terminal connection
+less (1)             - opposite of more
+lesskey (1)          - specify key bindings for less
+ln (1)               - make links between files
+logname (1)          - print user's login name
+ls, dir, vdir, ll, lsf (1) - list contents of directories
+magic (4)            - file command's magic number file
+make (1)             - GNU make utility to maintain groups of programs
+man (1)              - format and display the on-line manual pages
+manpath (1)          - determine user's search path for man pages
+mattrib (1)          - change MSDOS file attribute flags
+mcd (1)              - change MSDOS directory
+mcopy (1)            - copy MSDOS files to/from Unix
+mdel (1)             - delete an MSDOS file
+mdir (1)             - display an MSDOS directory
+mformat (1)          - add an MSDOS filesystem to a low-level formatted diskette.
+mkdir (1)            - make directories
+mkfifo (1)           - make FIFOs (named pipes)
+mkmanifest (1)       - create a shell script to restore Unix filenames
+mknod (1)            - make special files
+mlabel (1)           - make an MSDOS volume label
+mmd (1)              - make an MSDOS subdirectory
+more, page (1)       - file perusal filter for crt viewing
+mrd (1)              - remove an MSDOS subdirectory
+mread (1)            - low level read (copy) an MSDOS file to Unix
+mren (1)             - rename an existing MSDOS file
+mtype (1)            - display contents of an MSDOS file
+mv (1)               - rename files
+mwrite (1)           - low level write (copy) a Unix file to MSDOS
+nice (1)             - run a program with modified scheduling priority
+nl (1)               - number lines of files
+nohup (1)            - run a command immume to hangups, with output to a non-tty
+othello (1)		- an othello game
+paste (1)            - merge lines of files
+patch (1)            - a program for applying a diff file to an original
+pathchk (1)          - check whether pathnames are valid or portable
+pfbtops (1)          - translate a PostScript font in .pfb format to ASCII
+pr (1)               - convert text files for printing
+printenv (1)         - print all or part of environment
+printf (1)           - format and print data
+ps (1)               - display processes
+psbb (1)             - extract bounding box from PostScript document
+puzzle (1)		- 15-puzzle game for X
+ref (1)              - Display a C function header
+rm (1)               - remove files
+rmdir (1)            - remove empty directories
+sleep (1)            - delay for a specified amount of time
+sort (1)             - sort lines of text files
+split (1)            - split a file into pieces
+stty (1)             - change and print terminal line settings
+sum (1)              - checksum and count the blocks in a file
+tac (1)              - concatenate and print files in reverse
+tail (1)             - output the last part of files
+tee (1)              - read from standard input and write to standard output and files
+test (1)             - check file types and compare values
+tfmtodit (1)         - create font files for use with groff -Tdvi
+touch (1)            - change file timestamps
+tr (1)               - translate or delete characters
+tty (1)              - print the path of the terminal connected to standard input
+uname (1)            - print system information
+unexpand (1)         - convert spaces to tabs
+uniq (1)             - remove duplicate lines from a sorted file
+wc (1)               - print the number of bytes, words, and lines in files
+whatis (1)           - search the whatis database for complete words.
+whoami (1)           - print effective userid
+xargs (1)            - build and execute command lines from standard input
+xboard (1)		- Xt/Athena user interface for GNU Chess, version 1.2
+xpuzzle (1)		- another X-window V11 puzzle game
+xtetris (1)		- X Window block dropping game
+yes (1)              - output a string repeatedly until killed

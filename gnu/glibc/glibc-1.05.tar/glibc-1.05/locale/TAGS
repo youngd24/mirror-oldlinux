@@ -1,0 +1,44 @@
+
+setlocale.c,25
+DEFUN(setlocale,33,1289
+
+localeconv.c,30
+DEFUN_VOID(localeconv)25,938
+
+C-collate.c,0
+
+C-ctype.c,0
+
+C-ctype_ct.c,0
+
+C-ctype_mb.c,0
+
+C-monetary.c,0
+
+C-numeric.c,0
+
+C-response.c,0
+
+C-time.c,0
+
+locale.h,215
+#define	_LOCALE_H	25,910
+#define	LC_COLLATE	33,1180
+#define	LC_CTYPE	34,1208
+#define	LC_MONETARY	35,1234
+#define	LC_NUMERIC	36,1263
+#define	LC_TIME	37,1291
+#define	LC_RESPONSE	38,1317
+#define	LC_ALL	39,1346
+
+localeinfo.h,255
+#define	_LOCALEINFO_H	23,897
+#define	__need_size_t25,922
+#define	__need_wchar_t26,944
+#define	WCHAR_MAX	32,1063
+} mb_char;41,1281
+} literal_value;75,2048
+} subst;86,2240
+} locale;177,4049
+#define	LIMAGIC	193,4371
+#define	CATEGORY_MAGIC(198,4667

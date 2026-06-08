@@ -1,0 +1,484 @@
+
+features.h,594
+#define	_FEATURES_H	21,852
+     !defined(72,2765
+     !defined(73,2828
+#define	_GNU_SOURCE	74,2882
+#define	__USE_ANSI	79,2944
+#define	__FAVOR_BSD	84,3055
+     !defined(91,3244
+     !defined(92,3305
+#define	_BSD_SOURCE	93,3334
+#define	_SVID_SOURCE	94,3356
+     !defined(99,3528
+#define	_POSIX_SOURCE	100,3560
+#define	_POSIX_C_SOURCE	101,3584
+#define	__USE_POSIX	105,3669
+#define	__USE_POSIX2	109,3752
+#define	__USE_MISC	113,3833
+#define	__USE_BSD	117,3881
+#define	__USE_SVID	121,3929
+#define	__USE_GNU	125,3977
+#define	__GNU_LIBRARY__	130,4029
+#define	__extension__136,4223
+
+errno.h,25
+#define	_ERRNO_H	25,904
+
+sys/errno.h,0
+
+hp300/errnos.h,1960
+#define EPERM 2,16
+#define ENOENT 3,32
+#define ESRCH 4,49
+#define EINTR 5,65
+#define EIO 6,81
+#define ENXIO 7,95
+#define E2BIG 8,111
+#define ENOEXEC 9,127
+#define EBADF 10,145
+#define ECHILD 11,161
+#define EAGAIN 12,179
+#define ENOMEM 13,197
+#define EACCES 14,215
+#define EFAULT 15,233
+#define ENOTBLK 16,251
+#define EBUSY 17,270
+#define EEXIST 18,287
+#define EXDEV 19,305
+#define ENODEV 20,322
+#define ENOTDIR 21,340
+#define EISDIR 22,359
+#define EINVAL 23,377
+#define ENFILE 24,395
+#define EMFILE 25,413
+#define ENOTTY 26,431
+#define ETXTBSY 27,449
+#define EFBIG 28,468
+#define ENOSPC 29,485
+#define ESPIPE 30,503
+#define EROFS 31,521
+#define EMLINK 32,538
+#define EPIPE 33,556
+#define EDOM 36,686
+#define ERANGE 41,901
+#define EWOULDBLOCK 44,1005
+#define EINPROGRESS 45,1028
+#define EALREADY 46,1051
+#define ENOTSOCK 47,1071
+#define EDESTADDRREQ 48,1091
+#define EMSGSIZE 49,1115
+#define EPROTOTYPE 50,1135
+#define ENOPROTOOPT 51,1157
+#define EPROTONOSUPPORT 52,1180
+#define ESOCKTNOSUPPORT 53,1207
+#define EOPNOTSUPP 54,1234
+#define EPFNOSUPPORT 55,1256
+#define EAFNOSUPPORT 56,1280
+#define EADDRINUSE 57,1304
+#define EADDRNOTAVAIL 58,1326
+#define ENETDOWN 59,1351
+#define ENETUNREACH 60,1371
+#define ENETRESET 61,1394
+#define ECONNABORTED 62,1415
+#define ECONNRESET 63,1439
+#define ENOBUFS 64,1461
+#define EISCONN 65,1480
+#define ENOTCONN 66,1499
+#define ESHUTDOWN 67,1519
+#define ETOOMANYREFS 68,1540
+#define ETIMEDOUT 69,1564
+#define ECONNREFUSED 70,1585
+#define ELOOP 71,1609
+#define ENAMETOOLONG 72,1626
+#define EHOSTDOWN 73,1650
+#define EHOSTUNREACH 74,1671
+#define ENOTEMPTY 75,1695
+#define EPROCLIM 76,1716
+#define EUSERS 77,1736
+#define EDQUOT 78,1754
+#define ESTALE 79,1772
+#define EREMOTE 80,1790
+#define ENOMSG 81,1809
+#define EBADMSG 82,1827
+#define EIDRM 83,1846
+#define EDEADLK 84,1863
+#define ENOLCK 85,1882
+#define ENOSYS 86,1900
+#define __Emath_defined 90,1996
+
+sysdeps/stub/errnos.h,172
+#define	__Emath_defined	23,972
+#define	EDOM	25,999
+#define	ERANGE	26,1014
+#define	ENOSYS	30,1055
+#define	EINVAL	31,1072
+#define	ESPIPE	32,1089
+#define	EBADF	33,1106
+
+sysdeps/unix/bsd/bsd4.4/errnos.h,2112
+#define	EPERM	38,1892
+#define	ENOENT	39,1940
+#define	ESRCH	40,1991
+#define	EINTR	41,2031
+#define	EIO	42,2079
+#define	ENXIO	43,2120
+#define	E2BIG	44,2166
+#define	ENOEXEC	45,2213
+#define	EBADF	46,2257
+#define	ECHILD	47,2301
+#define	EDEADLK	48,2346
+#define	ENOMEM	50,2424
+#define	EACCES	51,2473
+#define	EFAULT	52,2517
+#define	ENOTBLK	54,2572
+#define	EBUSY	55,2621
+#define	EEXIST	57,2665
+#define	EXDEV	58,2703
+#define	ENODEV	59,2746
+#define	ENOTDIR	60,2806
+#define	EISDIR	61,2849
+#define	EINVAL	62,2890
+#define	ENFILE	63,2933
+#define	EMFILE	64,2989
+#define	ENOTTY	65,3035
+#define	ETXTBSY	67,3109
+#define	EFBIG	69,3158
+#define	ENOSPC	70,3198
+#define	ESPIPE	71,3248
+#define	EROFS	72,3287
+#define	EMLINK	73,3334
+#define	EPIPE	74,3375
+#define	EDOM	81,3548
+#define	ERANGE	84,3754
+#define	EAGAIN	90,3922
+#define	EWOULDBLOCK	92,3998
+#define	EINPROGRESS	93,4054
+#define	EALREADY	94,4110
+#define	ENOTSOCK	97,4214
+#define	EDESTADDRREQ	98,4272
+#define	EMSGSIZE	99,4332
+#define	EPROTOTYPE	100,4376
+#define	ENOPROTOOPT	101,4436
+#define	EPROTONOSUPPORT	102,4489
+#define	ESOCKTNOSUPPORT	103,4546
+#define	EOPNOTSUPP	104,4606
+#define	EPFNOSUPPORT	105,4669
+#define	EAFNOSUPPORT	106,4730
+#define	EADDRINUSE	107,4809
+#define	EADDRNOTAVAIL	108,4861
+#define	ENETDOWN	111,4974
+#define	ENETUNREACH	112,5017
+#define	ENETRESET	113,5070
+#define	ECONNABORTED	114,5134
+#define	ECONNRESET	115,5198
+#define	ENOBUFS	116,5252
+#define	EISCONN	117,5305
+#define	ENOTCONN	118,5360
+#define	ESHUTDOWN	119,5411
+#define	ETOOMANYREFS	120,5472
+#define	ETIMEDOUT	121,5537
+#define	ECONNREFUSED	122,5586
+#define	ELOOP	124,5637
+#define	ENAMETOOLONG	126,5719
+#define	EHOSTDOWN	130,5814
+#define	EHOSTUNREACH	131,5855
+#define	ENOTEMPTY	133,5926
+#define	EPROCLIM	137,6012
+#define	EUSERS	138,6058
+#define	EDQUOT	139,6099
+#define	ESTALE	142,6172
+#define	EREMOTE	143,6220
+#define	EBADRPC	144,6281
+#define	ERPCMISMATCH	145,6326
+#define	EPROGUNAVAIL	146,6375
+#define	EPROGMISMATCH	147,6426
+#define	EPROCUNAVAIL	148,6480
+#define	ENOLCK	151,6561
+#define	ENOSYS	152,6606
+#define	EFTYPE	154,6658
+
+limits.h,553
+#define	_LIMITS_H	25,925
+#define	CHAR_BIT	53,1548
+#define	MB_LEN_MAX	57,1683
+#define	SCHAR_MIN	60,1765
+#define	SCHAR_MAX	61,1790
+#define	UCHAR_MAX	65,1896
+#define	UCHAR_MAX	67,1925
+#define	CHAR_MIN	72,2033
+#define	CHAR_MAX	73,2052
+#define	CHAR_MIN	75,2085
+#define	CHAR_MAX	76,2112
+#define	SHRT_MIN	80,2212
+#define	SHRT_MAX	81,2238
+#define	USHRT_MAX	84,2334
+#define	INT_MIN	87,2418
+#define	INT_MAX	88,2450
+#define	UINT_MAX	92,2560
+#define	UINT_MAX	94,2595
+#define	LONG_MIN	98,2695
+#define	LONG_MAX	99,2720
+#define	ULONG_MAX	102,2817
+
+stddef.h,989
+     && !defined(8,284
+#define _STDDEF_H9,345
+#define _STDDEF_H_10,363
+#define _PTRDIFF_T35,1255
+#define _T_PTRDIFF_36,1274
+#define _T_PTRDIFF37,1294
+#define __PTRDIFF_T38,1313
+#define _PTRDIFF_T_39,1333
+#define ___int_ptrdiff_t_h40,1353
+#define _GCC_PTRDIFF_T41,1380
+#define __PTRDIFF_TYPE__ 43,1428
+typedef __PTRDIFF_TYPE__ ptrdiff_t;45,1469
+#define _SIZE_T72,2195
+#define _T_SIZE_73,2211
+#define _T_SIZE74,2228
+#define __SIZE_T75,2244
+#define _SIZE_T_76,2261
+#define ___int_size_t_h77,2278
+#define _GCC_SIZE_T78,2302
+#define _SIZET_79,2322
+#define __SIZE_TYPE__ 81,2360
+typedef __SIZE_TYPE__ size_t;83,2407
+#define _WCHAR_T111,3175
+#define _T_WCHAR_112,3192
+#define _T_WCHAR113,3210
+#define __WCHAR_T114,3227
+#define _WCHAR_T_115,3245
+#define ___int_wchar_t_h116,3263
+#define _GCC_WCHAR_T117,3288
+#define __WCHAR_TYPE__ 119,3332
+typedef __wchar_t wchar_t;124,3488
+typedef __WCHAR_TYPE__ wchar_t;127,3580
+#define NULL 145,3900
+#define offsetof(153,4081
+
+stdarg.h,463
+#define _STDARG_H8,219
+#define __GNUC_VA_LIST41,729
+typedef char *__gnuc_va_list;43,768
+typedef void *__gnuc_va_list;45,804
+#define __va_rounded_size(56,1105
+  (((sizeof 57,1140
+#define va_start(59,1212
+ (AP = ((char *) __builtin_next_arg 60,1250
+#define va_end(63,1349
+#define va_arg(67,1490
+  *((TYPE *) (void *) ((char *) (AP) - __va_rounded_size 69,1575
+#define _VA_LIST_100,2537
+#define _VA_LIST101,2555
+typedef __gnuc_va_list va_list;102,2572
+
+va-alpha.h,413
+#define __GNUC_VA_LIST11,365
+} __gnuc_va_list;18,637
+#define va_list 25,823
+#define _VA_LIST26,854
+#define _VA_LIST_27,871
+#define va_alist 32,937
+#define va_dcl33,973
+#define va_start(34,988
+#define va_start(40,1114
+  ((pvar) = *(__gnuc_va_list *) __builtin_saveregs 41,1150
+#define va_end(45,1230
+#define __extension__77,1987
+#define __va_nwords(82,2068
+  ((sizeof 83,2099
+#define va_arg(85,2158
+
+va-i860.h,543
+#define __GNUC_VA_LIST10,305
+} __f_regs;15,385
+} __va_saved_regs;23,597
+} __gnuc_va_list;37,1232
+#define va_alist 47,1465
+#define va_dcl48,1501
+#define va_start(49,1516
+#define va_start(56,1762
+  (pvar).__mem_ptr = __builtin_next_arg 60,1965
+#define va_end(65,2091
+#define __NUM_PARM_FREGS	92,2632
+#define __NUM_PARM_IREGS	93,2659
+#define __savereg(95,2688
+#define __ireg_used 106,3095
+#define __freg_used 107,3125
+#define __mem_ptr 108,3155
+#define __reg_base 109,3181
+#define __extension__115,3303
+#define va_arg(118,3333
+
+va-i960.h,594
+#define __GNUC_VA_LIST6,105
+typedef unsigned __gnuc_va_list[9,257
+#define __va_ellipsis 20,611
+#define __va_ellipsis22,643
+#define __vsiz(26,710
+#define __vali(28,801
+#define __vpad(30,944
+		       * __vali 31,1006
+#define va_start(34,1060
+				*(AP) = (unsigned) __builtin_next_arg 35,1106
+#define	va_alist 38,1159
+#define	va_dcl	39,1195
+#define	va_start(40,1251
+#define	va_arg(45,1445
+    ((AP)[1] <= 48 && (__vpad ((AP)[1], T) > 48 || __vsiz 48,1501
+      ? ((AP)[1] = 48 + __vsiz 49,1572
+  *((T *) (void *) ((char *) *(AP) + (AP)[1] - __vsiz 53,1686
+#define	va_end(57,1809
+
+va-m88k.h,764
+#define __GNUC_VA_LIST6,107
+} __gnuc_va_list;13,295
+#define va_start(23,564
+#define va_start(25,648
+    (AP).__va_arg = (int) (__builtin_argsize(28,783
+#define va_start(34,922
+#define va_start(36,998
+    (AP).__va_arg = (int) (__builtin_argsize(39,1125
+#define va_alist 41,1194
+#define va_dcl 42,1224
+#define __gnuc_va_list 53,1598
+#define _VA_LIST54,1629
+#define __INT_VARARGS_H57,1729
+#define __va_reg_p(60,1761
+   ? sizeof(62,1834
+#define	__va_size(64,1905
+#define va_arg(68,2077
+  ( (AP).__va_arg = (((AP).__va_arg + (1 << (__alignof__(69,2112
+		     & ~((1 << (__alignof__(70,2189
+    *((TYPE *) (void *) ((__va_reg_p(72,2278
+			  && (AP).__va_arg < 8 + __va_size(73,2329
+			 + ((AP).__va_arg - __va_size(75,2422
+#define va_end(77,2466
+
+va-mips.h,512
+#define __GNUC_VA_LIST15,463
+typedef char * __gnuc_va_list;16,486
+#define __va_ellipsis 27,834
+#define __va_ellipsis29,866
+#define __va_rounded_size(32,896
+  (((sizeof 33,933
+#define va_start(36,1024
+ (__AP = ((char *) &(__LASTARG) + __va_rounded_size 37,1066
+#define va_alist 40,1139
+#define va_dcl 41,1176
+#define va_start(42,1232
+#define va_end(46,1357
+#define va_arg(49,1445
+#define va_arg(54,1661
+  ((__type *) (void *) (__AP = (char *) ((__alignof(55,1701
+					 + __va_rounded_size(58,1853
+
+va-pa.h,425
+#define __GNUC_VA_LIST6,71
+typedef double *__gnuc_va_list;8,95
+#define va_start(15,311
+#define va_dcl 18,450
+#define va_start(19,484
+#define va_arg(22,552
+  (sizeof(23,583
+   ((AP = (__gnuc_va_list) ((char *)AP - sizeof 24,612
+      (__gnuc_va_list) ((long)((char *)AP - sizeof 27,740
+			& (sizeof(28,801
+     (*((TYPE *) (void *) ((char *)AP + ((8 - sizeof(29,844
+#define va_end(31,915
+#define _VA_LIST_37,1071
+
+va-pyr.h,453
+#define __GNUC_VA_LIST50,1772
+typedef void *__voidptr;52,1796
+typedef struct __va_regs 55,1828
+  } __va_regs;58,1987
+typedef __va_regs __va_buf;60,2003
+typedef __voidptr(*__va_buf)67,2218
+typedef __va_buf __gnuc_va_list;71,2257
+#define __va_ellipsis 83,2609
+#define __va_ellipsis85,2641
+#define va_alist 88,2671
+#define va_dcl 93,2855
+#define va_start(98,2949
+#define __extension__107,3235
+#define va_arg(112,3386
+#define va_end(128,3968
+
+va-sparc.h,466
+#define __GNUC_VA_LIST7,146
+typedef char * __gnuc_va_list;12,295
+typedef void * __gnuc_va_list;16,445
+#define __va_ellipsis 28,800
+#define __va_ellipsis30,832
+#define va_start(34,879
+  (__builtin_saveregs (), AP = ((char *) __builtin_next_arg 35,915
+#define va_alist 37,986
+#define va_dcl 39,1088
+#define va_start(41,1145
+#define va_end(46,1303
+#define __va_rounded_size(48,1325
+  (((sizeof 49,1360
+#define __extension__53,1503
+#define va_arg(64,2048
+
+va-spur.h,250
+struct __va_struct 7,113
+#define va_alist 9,155
+#define __va_ellipsis 15,344
+#define __va_ellipsis17,376
+#define va_dcl 21,471
+} va_list;27,603
+#define va_start(29,615
+#define va_end(32,745
+#define __extension__36,838
+#define va_arg(39,868
+
+assert/TAGS,include
+
+ctype/TAGS,include
+
+dirent/TAGS,include
+
+gnulib/TAGS,include
+
+grp/TAGS,include
+
+hurd/TAGS,include
+
+inet/TAGS,include
+
+io/TAGS,include
+
+locale/TAGS,include
+
+mach/TAGS,include
+
+malloc/TAGS,include
+
+math/TAGS,include
+
+misc/TAGS,include
+
+posix/TAGS,include
+
+pwd/TAGS,include
+
+resource/TAGS,include
+
+setjmp/TAGS,include
+
+signal/TAGS,include
+
+socket/TAGS,include
+
+stdio/TAGS,include
+
+stdlib/TAGS,include
+
+string/TAGS,include
+
+termios/TAGS,include
+
+time/TAGS,include

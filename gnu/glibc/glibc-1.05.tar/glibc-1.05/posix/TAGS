@@ -1,0 +1,305 @@
+
+sys/utsname.h,31
+#define	_SYS_UTSNAME_H	25,930
+
+sys/times.h,82
+#define	_SYS_TIMES_H	25,920
+#define	__need_clock_t30,981
+#define	times(53,1673
+
+sys/wait.h,738
+#define	_SYS_WAIT_H	25,933
+#define	WNOHANG	34,1040
+#define	WUNTRACED	35,1067
+#define	w_termsig	64,1570
+#define	w_coredump	65,1614
+#define	w_retcode	66,1660
+#define	w_stopsig	67,1704
+#define	__WAIT_INT(70,1749
+#define	__WAIT_INT(74,1910
+#define	__WAIT_STATUS	80,2064
+#define	__WAIT_INT(84,2124
+#define	__WAIT_STATUS	86,2161
+#define	WEXITSTATUS(90,2214
+#define	WTERMSIG(91,2276
+#define	WSTOPSIG(92,2332
+#define	WIFEXITED(93,2388
+#define	WIFSIGNALED(94,2446
+#define	WIFSTOPPED(95,2508
+#define	WCOREDUMP(98,2586
+#define	W_EXITCODE(99,2644
+#define	W_STOPCODE(100,2696
+#define	WAIT_ANY	111,3083
+#define	WAIT_MYPGRP	112,3125
+#define	wait3	139,4406
+#define	wait4	144,4606
+#define	waitpid	147,4652
+#define	wait	148,4678
+
+sys/types.h,692
+#define	_SYS_TYPES_H	25,932
+#define u_char 33,1034
+#define u_short 34,1058
+#define u_int 35,1084
+#define u_long 36,1106
+#define quad 37,1130
+#define u_quad 38,1150
+#define	fsid_t 39,1174
+#define dev_t 42,1206
+#define gid_t 43,1228
+#define ino_t 44,1250
+#define mode_t 45,1272
+#define nlink_t 46,1296
+#define off_t 47,1322
+#define pid_t 48,1344
+#define uid_t 49,1366
+#define	ssize_t	51,1404
+#define daddr_t 55,1455
+#define caddr_t 56,1481
+#define	__need_time_t59,1515
+#define	__need_size_t62,1556
+#define	FD_SETSIZE	67,1617
+#define	fd_set	68,1649
+#define	FD_ZERO(69,1674
+#define	FD_SET(70,1710
+#define	FD_CLR(71,1754
+#define	FD_ISSET(72,1798
+#define	select	87,2391
+
+unistd.h,1937
+#define	_UNISTD_H	25,913
+#define	_POSIX_VERSION	34,1183
+#define	_POSIX2_C_VERSION	39,1327
+#define	_POSIX2_C_BIND	43,1481
+#define	_POSIX2_C_DEV	47,1602
+#define	_POSIX2_SW_DEV	51,1720
+#define	STDIN_FILENO	85,2974
+#define	STDOUT_FILENO	86,3020
+#define	STDERR_FILENO	87,3068
+#define	ssize_t	95,3223
+#define	__need_size_t98,3257
+#define	R_OK	104,3381
+#define	W_OK	105,3430
+#define	X_OK	106,3480
+#define	F_OK	107,3532
+#define	access(114,3751
+#define	SEEK_SET	120,3940
+#define	SEEK_CUR	121,3995
+#define	SEEK_END	122,4049
+#define	lseek(147,5077
+#define	close(148,5145
+#define	read(149,5177
+#define	write(150,5228
+#define pipe(162,5630
+#define chown(196,7203
+#define fchown(206,7551
+#define chdir(215,7839
+#define dup(247,8992
+#define dup2(255,9235
+#define	execve	270,9769
+#define	__NORETURN	296,10893
+#define	__NORETURN298,10945
+#define	_PC_LINK_MAX	309,11312
+#define	_PC_MAX_CANON	310,11336
+#define	_PC_MAX_INPUT	311,11361
+#define	_PC_NAME_MAX	312,11386
+#define	_PC_PATH_MAX	313,11410
+#define	_PC_PIPE_BUF	314,11434
+#define	_PC_CHOWN_RESTRICTED	315,11458
+#define	_PC_NO_TRUNC	316,11489
+#define	_PC_VDISABLE	317,11513
+#define	pathconf	327,11913
+#define	fpathconf	328,11941
+#define sysconf(374,12851
+#define	_CS_PATH	380,12982
+#define	getpid(396,13457
+#define	getppid(397,13485
+#define	getpgrp(407,13776
+#define setpgid(417,14153
+#define	setpgrp(425,14373
+#define setsid(436,14772
+#define getuid(444,14974
+#define geteuid(452,15183
+#define getgid(460,15388
+#define getegid(468,15598
+#define setuid(485,16302
+#define	setreuid(495,16644
+#define setgid(510,17187
+#define	setregid(520,17531
+#define	fork	534,17982
+#define	vfork	544,18391
+#define	isatty(558,18812
+#define	link	565,19043
+#define symlink(573,19288
+#define readlink(583,19731
+#define	unlink(592,19995
+#define rmdir(600,20209
+#define	gethostname(664,22354
+#define	getpagesize(685,23097
+#define getdtablesize(695,23361
+
+glob.h,24
+#define	_GLOB_H	20,793
+
+wordexp.h,48
+#define	_WORDEXP_H	21,857
+} wordexp_t;45,1707
+
+fnmatch.h,27
+#define	_FNMATCH_H	20,796
+
+gnu/wait.h,379
+#define	_GNU_WAIT_H	21,846
+#define	__WNOHANG	26,939
+#define	__WUNTRACED	27,987
+#define	__WEXITSTATUS(31,1118
+#define	__WTERMSIG(34,1231
+#define	__WSTOPSIG(37,1342
+#define	__WIFEXITED(40,1447
+#define	__WIFSIGNALED(44,1578
+#define	__WIFSIGNALED(48,1750
+#define	__WIFSTOPPED(52,1905
+#define	__WCOREDUMP(55,2021
+#define	__W_EXITCODE(58,2114
+#define	__W_STOPCODE(59,2166
+
+gnu/types.h,1012
+#define	_GNU_TYPES_H	21,859
+typedef unsigned char __u_char;25,910
+typedef unsigned short __u_short;26,942
+typedef unsigned int __u_int;27,976
+typedef unsigned long __u_long;28,1006
+} __quad;32,1070
+} __u_quad;36,1116
+typedef int __dev_t;38,1129
+typedef unsigned int __uid_t;39,1182
+typedef unsigned int __gid_t;40,1249
+typedef unsigned long int __ino_t;41,1317
+typedef unsigned int __mode_t;42,1388
+typedef unsigned short int __nlink_t;43,1459
+typedef long int __off_t;44,1530
+typedef int __pid_t;45,1595
+typedef int __ssize_t;46,1657
+typedef __quad __fsid_t;47,1720
+typedef long int __daddr_t;50,1802
+typedef char *__caddr_t;51,1865
+typedef long int __time_t;52,1890
+typedef long int __swblk_t;53,1917
+#define	__FD_SETSIZE	60,2069
+#define	__NFDBITS	63,2158
+#define	__FDELT(64,2208
+#define	__FDMASK(65,2245
+} __fd_set;70,2382
+#define	__FD_ZERO(73,2461
+  ((void) memset((__ptr_t) (set), 0, sizeof(74,2486
+#define	__FD_SET(75,2540
+#define	__FD_CLR(76,2608
+#define	__FD_ISSET(77,2677
+
+getopt.h,135
+#define _GETOPT_H 22,890
+extern int getopt_long 108,3684
+extern int getopt_long_only 110,3816
+extern int _getopt_internal 115,4027
+
+posix1_lim.h,528
+#define	_POSIX1_LIMITS_H	25,925
+#define	_POSIX_ARG_MAX	31,1081
+#define	_POSIX_CHILD_MAX	34,1167
+#define	_POSIX_LINK_MAX	37,1232
+#define	_POSIX_MAX_CANON	40,1320
+#define	_POSIX_MAX_INPUT	44,1437
+#define	_POSIX_NGROUPS_MAX	47,1534
+#define	_POSIX_OPEN_MAX	50,1622
+#define	_POSIX_NAME_MAX	53,1689
+#define	_POSIX_PATH_MAX	56,1756
+#define	_POSIX_PIPE_BUF	59,1851
+#define	_POSIX_SSIZE_MAX	62,1918
+#define	_POSIX_STREAM_MAX	65,2008
+#define	_POSIX_TZNAME_MAX	68,2073
+#define	SSIZE_MAX	76,2207
+#define	NGROUPS_MAX	84,2364
+
+posix2_lim.h,568
+#define	_POSIX2_LIMITS_H	21,851
+#define	_POSIX2_BC_BASE_MAX	25,955
+#define	_POSIX2_BC_DIM_MAX	28,1066
+#define	_POSIX2_BC_SCALE_MAX	31,1161
+#define	_POSIX2_BC_STRING_MAX	34,1271
+#define	_POSIX2_EQUIV_CLASS_MAX	38,1447
+#define	_POSIX2_EXPR_NEST_MAX	42,1587
+#define	_POSIX2_LINE_MAX	45,1676
+#define	_POSIX2_RE_DUP_MAX	49,1838
+#define	BC_BASE_MAX	57,2038
+#define	BC_DIM_MAX	60,2104
+#define	BC_SCALE_MAX	63,2170
+#define	BC_STRING_MAX	66,2241
+#define	EQUIV_CLASS_MAX	69,2316
+#define	EXPR_NEST_MAX	72,2393
+#define	LINE_MAX	75,2461
+#define	RE_DUP_MAX	78,2521
+
+../sysdeps/unix/bsd/posix_opt.h,131
+#define	_POSIX_JOB_CONTROL	1,0
+#define	_POSIX_CHOWN_RESTRICTED	3,53
+#define	_POSIX_NO_TRUNC	4,87
+#define	_POSIX_VDISABLE	5,115
+
+../sysdeps/stub/posix_opt.h,0
+
+../sysdeps/unix/bsd/ultrix4/posix_opt.h,172
+#define	_POSIX_JOB_CONTROL	19,836
+#define	_POSIX_SAVED_IDS	20,865
+#define	_POSIX_CHOWN_RESTRICTED	21,892
+#define	_POSIX_NO_TRUNC	22,926
+#define	_POSIX_VDISABLE	23,953
+
+../hp300/local_lim.h,198
+#define NGROUPS_MAX 5,83
+#define ARG_MAX 6,106
+#define CHILD_MAX 7,128
+#define OPEN_MAX 8,149
+#define LINK_MAX 9,169
+#define MAX_CANON 10,192
+#define NAME_MAX 11,214
+#define PATH_MAX 12,235
+
+../sysdeps/stub/local_lim.h,0
+
+../sysdeps/unix/sysv/local_lim.h,206
+#define NGROUPS_MAX 19,825
+#define ARG_MAX 20,880
+#define CHILD_MAX 21,901
+#define OPEN_MAX 22,922
+#define LINK_MAX 23,942
+#define MAX_CANON 24,964
+#define NAME_MAX 30,1210
+#define PATH_MAX 32,1232
+
+tar.h,644
+#define	_TAR_H	24,919
+#define TSUID	74,2657
+#define TSGID	75,2677
+#define TSVTX	76,2697
+#define TUREAD	77,2717
+#define TUWRITE	78,2738
+#define TUEXEC	79,2760
+#define TGREAD	80,2781
+#define TGWRITE	81,2802
+#define TGEXEC	82,2824
+#define TOREAD	83,2845
+#define TOWRITE	84,2866
+#define TOEXEC	85,2888
+#define REGTYPE	91,3065
+#define AREGTYPE	92,3124
+#define LNKTYPE	93,3184
+#define SYMTYPE	94,3223
+#define CHRTYPE	95,3290
+#define BLKTYPE	96,3337
+#define DIRTYPE	97,3380
+#define FIFOTYPE	98,3419
+#define CONTTYPE	99,3459
+#define TMAGIC	103,3591
+#define TMAGLEN	104,3614
+#define TVERSION	107,3686
+#define TVERSLEN	108,3708

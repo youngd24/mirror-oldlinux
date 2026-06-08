@@ -1,0 +1,29 @@
+
+hurd.h,809
+#define	_HURD_H	21,842
+#define	_GNU_SOURCE23,861
+#define	__hurd_fail(33,1039
+#define	_HURD_PORT_USE(52,1874
+_hurd_port_init 62,2265
+_hurd_port_locked_get 72,2552
+_hurd_port_get 87,2870
+_hurd_port_free 96,3107
+_hurd_port_locked_set 109,3468
+_hurd_port_set 127,3888
+_hurd_dtable_use 185,5805
+_hurd_dtable_done 204,6212
+_hurd_dalloc 223,6906
+_hurd_dtable_fd 253,7713
+_hurd_fd 278,8221
+_hurd_fd_done 289,8456
+#define	_HURD_DPORT_USE(297,8670
+_hurd_dfail 318,9523
+extern void _hurd_internal_post_signal 418,12615
+#define	HURD_EINTR_RPC(430,13092
+#define	setauth	478,15042
+extern error_t __hurd_path_split 481,15070
+#define	hurd_path_split	484,15195
+extern error_t __hurd_path_lookup 485,15237
+#define	hurd_path_lookup 489,15378
+#define	path_split	493,15562
+#define path_lookup 497,15742
